@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-ExtraBold.ttf">
+            <string>Nunito-ExtraBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Terms And Services View Controller-->
+        <scene sceneID="gNv-NJ-xQv">
+            <objects>
+                <viewController storyboardIdentifier="TermsAndServicesViewController" hidesBottomBarWhenPushed="YES" id="lW2-Zi-RSY" customClass="TermsAndServicesViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cM9-NE-YQm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQl-kQ-1JA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuK-uI-ovT">
+                                        <rect key="frame" x="8" y="52" width="32" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="6rG-4i-RvG"/>
+                                            <constraint firstAttribute="width" constant="32" id="ar2-zi-Hh0"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="left-arrow"/>
+                                        <connections>
+                                            <action selector="btnBack:" destination="lW2-Zi-RSY" eventType="touchUpInside" id="Zdo-np-Ysg"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms Of Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Va-2p-rMb">
+                                        <rect key="frame" x="48" y="57" width="318" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="318" id="0W0-Wl-nbD"/>
+                                            <constraint firstAttribute="height" constant="21" id="Fjj-8b-2Pb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOs-3c-dje">
+                                        <rect key="frame" x="374" y="52" width="32" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="hat-AV-kJH"/>
+                                            <constraint firstAttribute="height" constant="30" id="wZf-je-b12"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="bell"/>
+                                        <connections>
+                                            <action selector="btnNotification:" destination="lW2-Zi-RSY" eventType="touchUpInside" id="1tg-zF-wuW"/>
+                                        </connections>
+                                    </button>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5F-1c-eoF" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                        <rect key="frame" x="390" y="52" width="16" height="16"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNl-YS-k6c">
+                                                <rect key="frame" x="1" y="1" width="15" height="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstItem="cNl-YS-k6c" firstAttribute="top" secondItem="L5F-1c-eoF" secondAttribute="top" constant="1" id="7Gr-HT-KkV"/>
+                                            <constraint firstAttribute="height" constant="16" id="Gpy-Vh-rGj"/>
+                                            <constraint firstAttribute="width" constant="16" id="IZl-j4-dv7"/>
+                                            <constraint firstAttribute="trailing" secondItem="cNl-YS-k6c" secondAttribute="trailing" id="SA5-ZE-ulw"/>
+                                            <constraint firstAttribute="bottom" secondItem="cNl-YS-k6c" secondAttribute="bottom" id="cwD-am-zNN"/>
+                                            <constraint firstItem="cNl-YS-k6c" firstAttribute="leading" secondItem="L5F-1c-eoF" secondAttribute="leading" constant="1" id="uUV-XG-UL1"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="VuK-uI-ovT" firstAttribute="leading" secondItem="lQl-kQ-1JA" secondAttribute="leading" constant="8" id="3bM-wO-0bh"/>
+                                    <constraint firstAttribute="trailing" secondItem="uOs-3c-dje" secondAttribute="trailing" constant="8" id="NoD-l8-WS9"/>
+                                    <constraint firstItem="uOs-3c-dje" firstAttribute="centerY" secondItem="lQl-kQ-1JA" secondAttribute="centerY" constant="15" id="OVB-RX-dtu"/>
+                                    <constraint firstItem="L5F-1c-eoF" firstAttribute="top" secondItem="uOs-3c-dje" secondAttribute="top" id="hvM-Dt-fJZ"/>
+                                    <constraint firstItem="6Va-2p-rMb" firstAttribute="centerY" secondItem="lQl-kQ-1JA" secondAttribute="centerY" constant="15.5" id="nYa-XJ-492"/>
+                                    <constraint firstAttribute="height" constant="104" id="rm0-G4-ps5"/>
+                                    <constraint firstItem="6Va-2p-rMb" firstAttribute="centerX" secondItem="lQl-kQ-1JA" secondAttribute="centerX" id="tXs-dT-u7O"/>
+                                    <constraint firstItem="L5F-1c-eoF" firstAttribute="trailing" secondItem="uOs-3c-dje" secondAttribute="trailing" id="tjZ-H3-FQn"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Va-2p-rMb" secondAttribute="bottom" constant="26" id="vM5-ux-dy3"/>
+                                    <constraint firstItem="VuK-uI-ovT" firstAttribute="centerY" secondItem="lQl-kQ-1JA" secondAttribute="centerY" constant="15" id="zxw-ke-JHk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ff9-tq-7V8">
+                                <rect key="frame" x="8" y="113" width="398" height="749"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration" allowsAirPlayForMediaPlayback="NO" allowsPictureInPictureMediaPlayback="NO">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K4e-QC-9AQ"/>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lQl-kQ-1JA" firstAttribute="trailing" secondItem="K4e-QC-9AQ" secondAttribute="trailing" id="44f-1W-wu5"/>
+                            <constraint firstItem="Ff9-tq-7V8" firstAttribute="bottom" secondItem="K4e-QC-9AQ" secondAttribute="bottom" id="BDK-qv-xtz"/>
+                            <constraint firstItem="lQl-kQ-1JA" firstAttribute="top" secondItem="cM9-NE-YQm" secondAttribute="top" id="Qup-Vy-Um7"/>
+                            <constraint firstItem="K4e-QC-9AQ" firstAttribute="trailing" secondItem="Ff9-tq-7V8" secondAttribute="trailing" constant="8" id="Vjk-Sr-DFU"/>
+                            <constraint firstItem="Ff9-tq-7V8" firstAttribute="top" secondItem="lQl-kQ-1JA" secondAttribute="bottom" constant="9" id="fk8-fM-rYU"/>
+                            <constraint firstItem="lQl-kQ-1JA" firstAttribute="leading" secondItem="K4e-QC-9AQ" secondAttribute="leading" id="tUd-gD-3uv"/>
+                            <constraint firstItem="Ff9-tq-7V8" firstAttribute="leading" secondItem="K4e-QC-9AQ" secondAttribute="leading" constant="8" id="yb2-g7-Ix1"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="lblNotificationLabel" destination="cNl-YS-k6c" id="8yY-IY-s6B"/>
+                        <outlet property="viewCustomNavBar" destination="lQl-kQ-1JA" id="KqM-Mm-tbL"/>
+                        <outlet property="viewNotificationCount" destination="L5F-1c-eoF" id="Wnb-66-VU9"/>
+                        <outlet property="webView" destination="Ff9-tq-7V8" id="Zwa-4T-k1b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xR-UK-mx8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.507246376811594" y="35.491071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bell" width="32" height="32"/>
+        <image name="left-arrow" width="32" height="32"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

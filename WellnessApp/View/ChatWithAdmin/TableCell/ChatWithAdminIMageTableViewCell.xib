@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatWithAdminIMageTableViewCell" rowHeight="122" id="KGk-i7-Jjw" customClass="ChatWithAdminIMageTableViewCell" customModule="Luvo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="173"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7N-Rd-UKt">
+                        <rect key="frame" x="20" y="8" width="262" height="157"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Huj-bP-Nzq">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="EnB-Iz-0zA"/>
+                                    <constraint firstAttribute="height" constant="30" id="wxb-oa-pg7"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="uGg-CW-O2c">
+                                <rect key="frame" x="5" y="5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="mfM-AH-oa8"/>
+                                    <constraint firstAttribute="width" constant="20" id="pmj-Af-Mhc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Wa3-A4-Ahp">
+                                <rect key="frame" x="38" y="0.0" width="216" height="129.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wa3-A4-Ahp" secondAttribute="height" multiplier="5:3" id="IO1-Lp-pXt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read: 1:45" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="7Cm-QF-3p4">
+                                <rect key="frame" x="43" y="134.5" width="63.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="13"/>
+                                <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wa3-A4-Ahp" firstAttribute="top" secondItem="B7N-Rd-UKt" secondAttribute="top" id="53i-Fb-Ax0"/>
+                            <constraint firstItem="Huj-bP-Nzq" firstAttribute="top" secondItem="B7N-Rd-UKt" secondAttribute="top" id="6PT-A3-S6p"/>
+                            <constraint firstAttribute="bottom" secondItem="7Cm-QF-3p4" secondAttribute="bottom" constant="4.5" id="6Yq-s3-4GV"/>
+                            <constraint firstAttribute="trailing" secondItem="Wa3-A4-Ahp" secondAttribute="trailing" constant="8" id="Bkn-cU-CBd"/>
+                            <constraint firstItem="Wa3-A4-Ahp" firstAttribute="leading" secondItem="Huj-bP-Nzq" secondAttribute="trailing" constant="8" id="ECQ-2u-4qS"/>
+                            <constraint firstItem="uGg-CW-O2c" firstAttribute="centerX" secondItem="Huj-bP-Nzq" secondAttribute="centerX" id="MTY-vG-1AT"/>
+                            <constraint firstItem="7Cm-QF-3p4" firstAttribute="leading" secondItem="Wa3-A4-Ahp" secondAttribute="leading" constant="5" id="YMy-fc-mtE"/>
+                            <constraint firstItem="Huj-bP-Nzq" firstAttribute="leading" secondItem="B7N-Rd-UKt" secondAttribute="leading" id="pit-R5-Znz"/>
+                            <constraint firstItem="7Cm-QF-3p4" firstAttribute="top" secondItem="Wa3-A4-Ahp" secondAttribute="bottom" constant="5" id="wTE-Ph-N1y"/>
+                            <constraint firstItem="uGg-CW-O2c" firstAttribute="centerY" secondItem="Huj-bP-Nzq" secondAttribute="centerY" id="zTu-Xa-ACr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="B7N-Rd-UKt" secondAttribute="trailing" constant="50" id="5So-r6-7ay"/>
+                    <constraint firstItem="B7N-Rd-UKt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="YdW-oC-u4k"/>
+                    <constraint firstItem="B7N-Rd-UKt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="h4e-Gl-cOI"/>
+                    <constraint firstAttribute="bottom" secondItem="B7N-Rd-UKt" secondAttribute="bottom" constant="8" id="lZV-OQ-w6H"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageReceive" destination="Wa3-A4-Ahp" id="Prx-4z-bLL"/>
+                <outlet property="imageUser" destination="uGg-CW-O2c" id="XLZ-gP-cfX"/>
+                <outlet property="imageUserButton" destination="Huj-bP-Nzq" id="w85-cv-E5g"/>
+                <outlet property="labelSeen" destination="7Cm-QF-3p4" id="N9n-MD-4EI"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="108.14732142857143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat" width="17" height="14.5"/>
+        <image name="placeholder" width="900" height="497"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

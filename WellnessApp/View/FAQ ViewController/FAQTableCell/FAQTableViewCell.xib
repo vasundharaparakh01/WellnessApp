@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FAQTableViewCell" rowHeight="175" id="KGk-i7-Jjw" customClass="FAQTableViewCell" customModule="Luvo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C23-KV-xbW" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ti-eM-2uV">
+                                <rect key="frame" x="8" y="7" width="304" height="57.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="joM-8h-b69"/>
+                                </constraints>
+                                <string key="text">sdlfsdhfudshufhsdiufhusdhfusdfsdfsdfsdfsdfsfsdfsdfsdfsdfsdfsdfrtrthhjhhjfhhhrtdffhfgghfghrthrfhthrthrtbdfdfghrtbfdhth12312312123123123123123123131313123123</string>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdlfsdhfudshufhsdiufhusdhfusdfsdfsdfsdfsdfsfsdfsdfsdfsdfsdfsdfrtrthhjh" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdE-KJ-4Yy">
+                                <rect key="frame" x="8" y="86" width="304" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="9qz-Fd-aaF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
+                                <color key="textColor" red="0.45490196078431372" green="0.45490196078431372" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebT-eO-IQM">
+                                <rect key="frame" x="8" y="72.5" width="304" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="jnV-yf-45u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ebT-eO-IQM" firstAttribute="top" secondItem="2ti-eM-2uV" secondAttribute="bottom" constant="8" symbolic="YES" id="7sX-5a-jZ3"/>
+                            <constraint firstAttribute="trailing" secondItem="2ti-eM-2uV" secondAttribute="trailing" constant="8" id="AW0-VL-1CO"/>
+                            <constraint firstAttribute="trailing" secondItem="ebT-eO-IQM" secondAttribute="trailing" constant="8" id="Ac0-nA-TPs"/>
+                            <constraint firstAttribute="bottom" secondItem="xdE-KJ-4Yy" secondAttribute="bottom" constant="13" id="FFe-JV-bea"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="114" id="Ub1-WM-fEv"/>
+                            <constraint firstItem="xdE-KJ-4Yy" firstAttribute="leading" secondItem="C23-KV-xbW" secondAttribute="leading" constant="8" id="Y0w-uW-tkT"/>
+                            <constraint firstItem="xdE-KJ-4Yy" firstAttribute="top" secondItem="ebT-eO-IQM" secondAttribute="bottom" constant="12.5" id="dFv-sJ-XI9"/>
+                            <constraint firstItem="2ti-eM-2uV" firstAttribute="top" secondItem="C23-KV-xbW" secondAttribute="top" constant="7" id="lJU-7h-Mb5"/>
+                            <constraint firstAttribute="trailing" secondItem="xdE-KJ-4Yy" secondAttribute="trailing" constant="8" id="vnA-W6-fVq"/>
+                            <constraint firstItem="ebT-eO-IQM" firstAttribute="leading" secondItem="C23-KV-xbW" secondAttribute="leading" constant="8" id="wd2-Dd-p7j"/>
+                            <constraint firstItem="2ti-eM-2uV" firstAttribute="leading" secondItem="C23-KV-xbW" secondAttribute="leading" constant="8" id="zHE-ry-iQc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="C23-KV-xbW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1IQ-mD-wWH"/>
+                    <constraint firstAttribute="trailing" secondItem="C23-KV-xbW" secondAttribute="trailing" id="1aW-9d-hLD"/>
+                    <constraint firstAttribute="bottom" secondItem="C23-KV-xbW" secondAttribute="bottom" constant="11" id="RlJ-Th-Vx5"/>
+                    <constraint firstItem="C23-KV-xbW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uLI-OO-TTZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblFAQAnswer" destination="xdE-KJ-4Yy" id="819-jk-cHk"/>
+                <outlet property="lblFAQTitle" destination="2ti-eM-2uV" id="LNr-ul-nlL"/>
+                <outlet property="viewBackground" destination="C23-KV-xbW" id="QnL-bu-iiS"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="89.732142857142847"/>
+        </tableViewCell>
+    </objects>
+</document>

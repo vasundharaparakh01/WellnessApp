@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KGk-i7-Jjw" customClass="MoodTableViewCell" customModule="Luvo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MnU-vG-ExV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radioOff" translatesAutoresizingMaskIntoConstraints="NO" id="hlC-xy-tK6">
+                                <rect key="frame" x="0.0" y="10" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="jkN-7o-P5z"/>
+                                    <constraint firstAttribute="width" constant="25" id="yRK-IZ-UfQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZ2-KM-3Aa">
+                                <rect key="frame" x="33" y="14" width="287" height="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hlC-xy-tK6" firstAttribute="top" secondItem="MnU-vG-ExV" secondAttribute="top" constant="10" id="4cC-Z8-fwg"/>
+                            <constraint firstAttribute="trailing" secondItem="tZ2-KM-3Aa" secondAttribute="trailing" id="Eku-Xg-Gpz"/>
+                            <constraint firstItem="tZ2-KM-3Aa" firstAttribute="top" secondItem="hlC-xy-tK6" secondAttribute="bottom" constant="-21" id="H8u-b9-HFH"/>
+                            <constraint firstAttribute="bottom" secondItem="tZ2-KM-3Aa" secondAttribute="bottom" constant="14" id="HXx-3j-kCv"/>
+                            <constraint firstItem="tZ2-KM-3Aa" firstAttribute="top" secondItem="MnU-vG-ExV" secondAttribute="top" constant="14" id="ebe-yg-ZL7"/>
+                            <constraint firstItem="tZ2-KM-3Aa" firstAttribute="leading" secondItem="hlC-xy-tK6" secondAttribute="trailing" constant="8" symbolic="YES" id="ljC-hu-RYb"/>
+                            <constraint firstItem="hlC-xy-tK6" firstAttribute="leading" secondItem="MnU-vG-ExV" secondAttribute="leading" id="xg9-ZU-eiq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="MnU-vG-ExV" secondAttribute="bottom" constant="17" id="BZF-HR-n4R"/>
+                    <constraint firstAttribute="trailing" secondItem="MnU-vG-ExV" secondAttribute="trailing" id="Xqw-Tg-uvB"/>
+                    <constraint firstItem="MnU-vG-ExV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qhb-rJ-kwi"/>
+                    <constraint firstItem="MnU-vG-ExV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ycw-zw-Sid"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgRadio" destination="hlC-xy-tK6" id="40h-Po-VGO"/>
+                <outlet property="lblMood" destination="tZ2-KM-3Aa" id="0kX-pI-T9d"/>
+                <outlet property="viewBackground" destination="MnU-vG-ExV" id="jkv-gA-wdC"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="120.20089285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radioOff" width="13" height="13"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

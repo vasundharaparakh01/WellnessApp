@@ -1,0 +1,192 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;\f2\froman\fcharset0 Times-Roman;
+\f3\fnil\fcharset0 HelveticaNeue;\f4\fnil\fcharset0 HelveticaNeue-Bold;\f5\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red93\green108\blue121;\red255\green255\blue255;\red0\green0\blue0;
+\red155\green35\blue147;\red57\green0\blue160;\red108\green54\blue169;\red28\green70\blue74;\red28\green0\blue207;
+\red50\green109\blue116;\red0\green0\blue0;\red26\green28\blue31;\red255\green255\blue255;\red252\green95\blue163;
+\red31\green31\blue36;\red255\green255\blue255;\red208\green168\blue255;\red161\green103\blue230;\red161\green103\blue230;
+\red252\green106\blue93;\red158\green241\blue221;\red208\green168\blue255;\red103\green183\blue164;\red124\green181\blue84;
+\red24\green23\blue27;\red124\green181\blue84;\red164\green251\blue230;\red114\green191\blue174;}
+{\*\expandedcolortbl;;\csgenericrgb\c36526\c42188\c47515;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c0\c0\c0\c85000;
+\csgenericrgb\c60759\c13753\c57628;\csgenericrgb\c22454\c0\c62803;\csgenericrgb\c42190\c21278\c66379;\csgenericrgb\c10981\c27276\c28869;\csgenericrgb\c11000\c0\c81000;
+\csgenericrgb\c19418\c42935\c45455;\cssrgb\c0\c0\c0;\cssrgb\c13725\c14902\c16078;\cssrgb\c100000\c100000\c100000;\csgenericrgb\c98839\c37355\c63833;
+\csgenericrgb\c12054\c12284\c14131;\csgenericrgb\c100000\c100000\c100000\c85000;\csgenericrgb\c81569\c65882\c100000;\csgenericrgb\c63232\c40219\c90115;\csgenericrgb\c63137\c40392\c90196;
+\csgenericrgb\c98912\c41558\c36568;\csgenericrgb\c62145\c94386\c86819;\csgenericrgb\c81681\c65692\c99927;\csgenericrgb\c40538\c71705\c64209;\csgenericrgb\c48672\c70957\c33070\c45000;
+\csgenericrgb\c9220\c9172\c10609;\csgenericrgb\c48672\c70957\c33070;\csgenericrgb\c64402\c98353\c90184;\csgenericrgb\c44848\c74872\c68231;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab593
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 Created by BEASMACUSR02 on 06/09/21.\
+\
+info.plist\
+Appearence - Light (To set the to light mode all time when the device actual is in dark mode)\
+//-=-=-=-=-=-=-=-=-=-=-==-=-=-==-=-==-=-=-=-=-=-=-=-=-=-=-=-\
+\
+COLOR CHANGE ACCORDING TO CHAKRA LEVEL \
+Search for \
+//Color setup according to chakra level\cf4 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1\b \cf5 let
+\f0\b0 \cf4  chakraLevel = \cf6 UserDefaults\cf4 .\cf7 standard\cf4 .\cf7 value\cf4 (\cf7 forKey\cf4 : \cf8 ConstantUserDefaultTag\cf4 .udBlockedChakraLevel) 
+\f1\b \cf5 as
+\f0\b0 \cf4 ? \cf6 Int\cf4  ?? \cf9 9\cf2 )\
+\cf8 ConstantUserDefaultTag\cf4 .\cf10 udPrevChakraLevel = Storing prev_level\
+\cf8 ConstantUserDefaultTag\cf4 .udBlockedChakraLevel = Storing blocked chakra level\cf2 \
+\
+//Needed if we want to show Navbar on the next page while removing the current view\
+override func viewWillDisappear(_ animated: Bool) \{\cf4 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+\cf2     super.viewWillDisappear(animated)\cf4 \
+\cf2         \cf4 \
+\cf2      //Show navigation bar\cf4 \
+\cf2      navigationController?.setNavigationBarHidden(false, animated: animated)\cf4 \
+\cf2 \}\
+\
+//-------------------------------------------------------------\
+//Remove all UserDefault keys\
+\pard\pardeftab720\sl340\partightenfactor0
+
+\f2\fs26 \cf11 \cb1 \expnd0\expndtw0\kerning0
+let domain = Bundle.main.bundleIdentifier!\
+UserDefaults.standard.removePersistentDomain(forName: domain)\
+UserDefaults.standard.synchronize()	\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf12 \cb13 If your target devices are\'a0
+\f4\b iOS 12
+\f3\b0 \'a0or newer, according to the above release notes it should work without a call to\'a0
+\f2\fs26 \cb1 synchronize
+\f3\fs30 \cb13 . However, if you still support\'a0
+\f4\b iOS 11
+\f3\b0 \'a0and lower, you still might want to call the\'a0
+\f2\fs26 \cb1 synchronize
+\f3\fs30 \cb13 \'a0method.\
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1\b\fs24 \cf14 \cb15 \kerning1\expnd0\expndtw0 do
+\f0\b0 \cf16 \{\
+                
+\f1\b \cf14 let
+\f0\b0 \cf16  ggg = \cf17 UserDefaults\cf16 .\cf18 standard\cf16 .\cf19 value\cf16 (\cf19 forKey\cf16 : \cf20 "userDetails"\cf16 )\
+                
+\f1\b \cf14 let
+\f0\b0 \cf16  data = 
+\f1\b \cf14 try
+\f0\b0 \cf16  \cf17 JSONDecoder\cf16 ().\cf19 decode\cf16 (\cf21 socialUserDetails\cf16 .
+\f1\b \cf14 self
+\f0\b0 \cf16 , \cf19 from\cf16 : ggg 
+\f1\b \cf14 as
+\f0\b0 \cf16 ! \cf22 Data\cf16 )\
+                \
+                print(\cf20 "--------->"\cf16 ,data)\
+            \} 
+\f1\b \cf14 catch
+\f0\b0 \cf16  
+\f1\b \cf14 let
+\f0\b0 \cf16  \cf19 error\cf16  \{\
+                \cf19 print\cf16 (\cf23 error\cf16 .\cf18 localizedDescription\cf16 )\
+            \}
+\f2\fs26 \cf11 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf11 \
+//---------------------------------------------------------------------------------------------------\
+SKActivityIndicator Customization\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf24 \cb25 \kerning1\expnd0\expndtw0 ///
+\f5 \cf26 /Customize here accordingly to the requirement
+\f0 \cf3 \
+\cf26 //        // default is darkGray\cf3 \
+\cf26 //        SKActivityIndicator.spinnerColor(UIColor.darkGray)\cf3 \
+\cf26 //\cf3 \
+\cf26 //        // default is black\cf3 \
+\cf26 //        SKActivityIndicator.statusTextColor(UIColor.black)\cf3 \
+\cf26 //\cf3 \
+\cf26 //        // default is System Font\cf3 \
+\cf26 //        let myFont = UIFont(name: "AvenirNext-DemiBold", size: 18)\cf3 \
+\cf26 //        SKActivityIndicator.statusLabelFont(myFont!)\cf3 \
+\cf26 //\cf3 \
+\cf26 //        // ActivityIndicator Styles: choose and set one of four.\cf3 \
+\cf26 //        SKActivityIndicator.spinnerStyle(.defaultSpinner)\cf3 \
+\cf26 //        SKActivityIndicator.spinnerStyle(.spinningFadeCircle)\cf3 \
+\cf26 //        SKActivityIndicator.spinnerStyle(.spinningCircle)\cf3 \
+        \cf27 SKActivityIndicator\cf3 .\cf28 spinnerStyle\cf3 (.\cf28 spinningHalfCircles\cf3 )
+\f2\fs26 \cf11 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf11 \
+//----------------------------------------------------------------------------------------------------\
+//OpenAlertWithButtonFunc\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab593\pardirnatural\partightenfactor0
+
+\f3\fs35 \cf0 \kerning1\expnd0\expndtw0 Global UIAlertController With UIViewController Extension\
+\pard\pardeftab720\sl340\partightenfactor0
+
+\f2\fs26 \cf11 \expnd0\expndtw0\kerning0
+extension UIViewController\{\
+\
+    // Global Alert\
+    // Define Your number of buttons, styles and completion\
+    public func openAlert(title: String,\
+                          message: String,\
+                          alertStyle:UIAlertController.Style,\
+                          actionTitles:[String],\
+                          actionStyles:[UIAlertAction.Style],\
+                          actions: [((UIAlertAction) -> Void)])\{\
+\
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: alertStyle)\
+        for(index, indexTitle) in actionTitles.enumerated()\{\
+            let action = UIAlertAction(title: indexTitle, style: actionStyles[index], handler: actions[index])\
+            alertController.addAction(action)\
+        \}\
+        self.present(alertController, animated: true)\
+    \}\
+\}\
+\pard\pardeftab720\sl504\sa271\partightenfactor0
+
+\f3\fs38\fsmilli19385 \cf12 \cb13 Usage\
+\pard\pardeftab720\sl456\sa259\partightenfactor0
+
+\fs35 \cf12 Alert\
+\pard\pardeftab720\sl340\partightenfactor0
+
+\f2\fs26 \cf11 \cb1 self.openAlert(title: "alert",\
+                      message: "add your message",\
+                      alertStyle: .alert,\
+                      actionTitles: ["Okay", "Cancel"],\
+                      actionStyles: [.default, .cancel],\
+                      actions: [\
+                          \{_ in\
+                               print("okay click")\
+                          \},\
+                          \{_ in\
+                               print("cancel click")\
+                          \}\
+                     ])\
+\pard\pardeftab720\sl456\sa259\partightenfactor0
+
+\f3\fs35 \cf12 \cb13 ActionSheet\
+\pard\pardeftab720\sl340\partightenfactor0
+
+\f2\fs26 \cf11 \cb1 self.openAlert(title: "actionsheet",\
+                  message: "add your message",\
+                  alertStyle: .actionSheet,\
+                  actionTitles: ["Okay", "Cancel"],\
+                  actionStyles: [.default, .cancel],\
+                  actions: [\
+                      \{_ in\
+                           print("okay click")\
+                      \},\
+                      \{_ in\
+                           print("cancel click")\
+                      \}\
+                 ])\
+\
+\
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>QManager.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>10.3.0</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>2B0197E9438F99BCBAE59B974F6A8E3D3C9D5837</string>
+				<key>dateExpires</key>
+				<string>06/02/24</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>V5K9D2E87J.com.QuickQueues</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>PSZK2TU728</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>name</key>
+			<string>QManager Pro.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>9dec57ea-614b-4f71-9d1e-8600664b49bb</string>
+				<key>dateExpires</key>
+				<string>07/02/24</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: com.QuickQueues</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>PSZK2TU728</string>
+				<key>name</key>
+				<string>Mobile Queue Technologies Inc.</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>10.3</string>
+		</dict>
+	</array>
+</dict>
+</plist>
