@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -139,7 +139,7 @@
 		00EA18E0295B235300F08D41 /* CoachRecordedListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EA18DF295B235300F08D41 /* CoachRecordedListVC.swift */; };
 		00FF7D0C295D75A30051CC9F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3A6E7B274217E000B2EB81 /* HealthKit.framework */; };
 		00FF7D0F295D75A50051CC9F /* HealthKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A522B2287FEEB0003526E1 /* HealthKitUI.framework */; };
-		00FF7D11295D75A70051CC9F /* Pods_Luvo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF14524B78139DEE129AFDB /* Pods_Luvo.framework */; };
+		00FF7D11295D75A70051CC9F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF14524B78139DEE129AFDB /* Pods.framework */; };
 		2D01086728615924005C97BE /* VideoPlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D01086628615924005C97BE /* VideoPlay.storyboard */; };
 		2D01086E28615B33005C97BE /* VideoPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01086D28615B33005C97BE /* VideoPlay.swift */; };
 		2D1B420E29D2271D00FA0D81 /* StripeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B420D29D2271D00FA0D81 /* StripeVC.swift */; };
@@ -217,7 +217,6 @@
 		3E1D3119271A83AE0025325A /* GratitudeValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1D3118271A83AE0025325A /* GratitudeValidation.swift */; };
 		3E1D54BF272C164300F9EF6F /* MeditationAudioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1D54BE272C164200F9EF6F /* MeditationAudioListViewController.swift */; };
 		3E1E0DBD279EDB1700D684D7 /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E0DBC279EDB1700D684D7 /* MeditationViewModel.swift */; };
-		3E24524326E289E4002EE3F4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E24524226E289E4002EE3F4 /* Constant.swift */; };
 		3E27F9B6279BEF70000E05AE /* TimeTrackingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E27F9B5279BEF6F000E05AE /* TimeTrackingRequest.swift */; };
 		3E27F9B8279BEF8F000E05AE /* TimeTrackingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E27F9B7279BEF8F000E05AE /* TimeTrackingResponse.swift */; };
 		3E27F9BA279BF039000E05AE /* TimeTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E27F9B9279BF039000E05AE /* TimeTrackingViewModel.swift */; };
@@ -252,7 +251,6 @@
 		3E40741926DF10E100176EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E40741826DF10E100176EC5 /* AppDelegate.swift */; };
 		3E40741B26DF10E100176EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E40741A26DF10E100176EC5 /* SceneDelegate.swift */; };
 		3E40742026DF10E100176EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E40741E26DF10E100176EC5 /* Main.storyboard */; };
-		3E40742326DF10E100176EC5 /* Luvo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E40742126DF10E100176EC5 /* Luvo.xcdatamodeld */; };
 		3E40742526DF10E700176EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E40742426DF10E700176EC5 /* Assets.xcassets */; };
 		3E40742826DF10E700176EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E40742626DF10E700176EC5 /* LaunchScreen.storyboard */; };
 		3E40745726E8D5FA00BBEF2D /* Welcome2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E40745626E8D5FA00BBEF2D /* Welcome2ViewController.swift */; };
@@ -436,7 +434,6 @@
 		3EE9538726E72A0700DACB70 /* InstagramModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9538426E72A0600DACB70 /* InstagramModels.swift */; };
 		3EE9538826E72A0700DACB70 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9538526E72A0700DACB70 /* WebViewController.swift */; };
 		3EE9538926E72A0700DACB70 /* InstagramApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9538626E72A0700DACB70 /* InstagramApi.swift */; };
-		3EE9538B26E7A2A100DACB70 /* WelcomeToLuvo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3EE9538A26E7A2A100DACB70 /* WelcomeToLuvo.mp3 */; };
 		3EE9D0532704BC5F00D9A1AF /* UIImageView+IBInspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9D0522704BC5E00D9A1AF /* UIImageView+IBInspect.swift */; };
 		3EEABC42279944A300BD6220 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEABC41279944A200BD6220 /* FavouritesViewController.swift */; };
 		3EEABC45279959C400BD6220 /* FAQResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEABC44279959C300BD6220 /* FAQResponse.swift */; };
@@ -643,7 +640,6 @@
 		2DAAF25729C606A7000A61EB /* CaoachChatViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaoachChatViewCell.swift; sourceTree = "<group>"; };
 		2DBFC7AD29E1385B00A07D8B /* DeleteUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserRequest.swift; sourceTree = "<group>"; };
 		2DBFC7AF29E13A7200A07D8B /* DeleteUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserResponse.swift; sourceTree = "<group>"; };
-		2DD00CD129B42CC400719D7D /* LuvoDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LuvoDebug.entitlements; sourceTree = "<group>"; };
 		3E01ED06279979E9004D6748 /* FavAudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavAudioTableViewCell.swift; sourceTree = "<group>"; };
 		3E01ED07279979E9004D6748 /* FavAudioTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavAudioTableViewCell.xib; sourceTree = "<group>"; };
 		3E01ED0B27997A10004D6748 /* FavVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavVideoTableViewCell.swift; path = "Luvo/View/Favourites ViewController/FavouriteAudioTableCell/FavVideoTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
@@ -697,7 +693,6 @@
 		3E1D3118271A83AE0025325A /* GratitudeValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeValidation.swift; sourceTree = "<group>"; };
 		3E1D54BE272C164200F9EF6F /* MeditationAudioListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationAudioListViewController.swift; sourceTree = "<group>"; };
 		3E1E0DBC279EDB1700D684D7 /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
-		3E24524226E289E4002EE3F4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		3E27F9B5279BEF6F000E05AE /* TimeTrackingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackingRequest.swift; sourceTree = "<group>"; };
 		3E27F9B7279BEF8F000E05AE /* TimeTrackingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackingResponse.swift; sourceTree = "<group>"; };
 		3E27F9B9279BF039000E05AE /* TimeTrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackingViewModel.swift; sourceTree = "<group>"; };
@@ -725,17 +720,15 @@
 		3E38BC3C27296B5B00B3D2D6 /* FavouritesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesResponse.swift; sourceTree = "<group>"; };
 		3E38BC3E27296D6300B3D2D6 /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
 		3E38BC4027297CD400B3D2D6 /* SoothingVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoothingVideoPlayerViewController.swift; sourceTree = "<group>"; };
-		3E3A6E7A274217E000B2EB81 /* Luvo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Luvo.entitlements; sourceTree = "<group>"; };
 		3E3A6E7B274217E000B2EB81 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		3E3BA359279EE5B000EE0823 /* HowToEarnPointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToEarnPointsViewController.swift; sourceTree = "<group>"; };
 		3E3DC9302775FA3B00BF5AB7 /* LikesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesResponse.swift; sourceTree = "<group>"; };
 		3E3DC9322775FAB900BF5AB7 /* LikesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesRequest.swift; sourceTree = "<group>"; };
 		3E3DC9342775FB0D00BF5AB7 /* LikesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewModel.swift; sourceTree = "<group>"; };
-		3E40741526DF10E100176EC5 /* Luvo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luvo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E40741526DF10E100176EC5 /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E40741826DF10E100176EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E40741A26DF10E100176EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3E40741F26DF10E100176EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3E40742226DF10E100176EC5 /* Luvo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Luvo.xcdatamodel; sourceTree = "<group>"; };
 		3E40742426DF10E700176EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E40742726DF10E700176EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E40742926DF10E700176EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -920,7 +913,6 @@
 		3EE9538426E72A0600DACB70 /* InstagramModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramModels.swift; sourceTree = "<group>"; };
 		3EE9538526E72A0700DACB70 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		3EE9538626E72A0700DACB70 /* InstagramApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramApi.swift; sourceTree = "<group>"; };
-		3EE9538A26E7A2A100DACB70 /* WelcomeToLuvo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WelcomeToLuvo.mp3; sourceTree = "<group>"; };
 		3EE9D0522704BC5E00D9A1AF /* UIImageView+IBInspect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+IBInspect.swift"; sourceTree = "<group>"; };
 		3EEABC41279944A200BD6220 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		3EEABC44279959C300BD6220 /* FAQResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQResponse.swift; sourceTree = "<group>"; };
@@ -988,12 +980,12 @@
 		3EFFFE32271937E80003C066 /* GratitudeCategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeCategoryResponse.swift; sourceTree = "<group>"; };
 		3EFFFE342719504A0003C066 /* GratitudeAddRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeAddRequest.swift; sourceTree = "<group>"; };
 		3EFFFE36271950ED0003C066 /* GratitudeAddResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeAddResponse.swift; sourceTree = "<group>"; };
-		805CA57DCC03FCFEC1DED1C6 /* Pods-Luvo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luvo.release.xcconfig"; path = "Target Support Files/Pods-Luvo/Pods-Luvo.release.xcconfig"; sourceTree = "<group>"; };
-		9CF14524B78139DEE129AFDB /* Pods_Luvo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Luvo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		805CA57DCC03FCFEC1DED1C6 /* Pods-.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-.release.xcconfig"; path = "Target Support Files/Pods-Luvo/Pods-.release.xcconfig"; sourceTree = "<group>"; };
+		9CF14524B78139DEE129AFDB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9762D22767574200487EBF /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		BD9762D527675FE300487EBF /* SearchMeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMeditationViewController.swift; sourceTree = "<group>"; };
 		BD9762D72767844E00487EBF /* SearchAudioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAudioViewModel.swift; sourceTree = "<group>"; };
-		C685D18E4A9A2F84AC11F7CC /* Pods-Luvo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luvo.debug.xcconfig"; path = "Target Support Files/Pods-Luvo/Pods-Luvo.debug.xcconfig"; sourceTree = "<group>"; };
+		C685D18E4A9A2F84AC11F7CC /* Pods-debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debug.xcconfig"; path = "Target Support Files/Pods-Luvo/Pods-debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1014,7 +1006,7 @@
 				0063FA1F2A2F034700F8725E /* AINS in Frameworks */,
 				0063FA332A2F034700F8725E /* VideoCodecDec in Frameworks */,
 				2DC113ED29E1C31900FCC871 /* StripePaymentsUI in Frameworks */,
-				00FF7D11295D75A70051CC9F /* Pods_Luvo.framework in Frameworks */,
+				00FF7D11295D75A70051CC9F /* Pods.framework in Frameworks */,
 				2DC113E529E1C31900FCC871 /* StripeFinancialConnections in Frameworks */,
 				2DC113DF29E1C31900FCC871 /* Stripe in Frameworks */,
 				0063FA312A2F034700F8725E /* VQA in Frameworks */,
@@ -1204,8 +1196,8 @@
 		137E5A118D0259EE7BCD4721 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C685D18E4A9A2F84AC11F7CC /* Pods-Luvo.debug.xcconfig */,
-				805CA57DCC03FCFEC1DED1C6 /* Pods-Luvo.release.xcconfig */,
+				C685D18E4A9A2F84AC11F7CC /* Pods-debug.xcconfig */,
+				805CA57DCC03FCFEC1DED1C6 /* Pods-.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1375,7 +1367,6 @@
 		3E19231026E1DA64001B7898 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
-				3E24524226E289E4002EE3F4 /* Constant.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -1447,7 +1438,6 @@
 		3E19232D26E26D3E001B7898 /* Background Music */ = {
 			isa = PBXGroup;
 			children = (
-				3EE9538A26E7A2A100DACB70 /* WelcomeToLuvo.mp3 */,
 			);
 			path = "Background Music";
 			sourceTree = "<group>";
@@ -1569,7 +1559,7 @@
 		3E40740C26DF10E100176EC5 = {
 			isa = PBXGroup;
 			children = (
-				3E40741726DF10E100176EC5 /* Luvo */,
+				3E40741726DF10E100176EC5 /* Wellness */,
 				3E40741626DF10E100176EC5 /* Products */,
 				137E5A118D0259EE7BCD4721 /* Pods */,
 				6CA16832B307214BC2CD14F9 /* Frameworks */,
@@ -1579,17 +1569,15 @@
 		3E40741626DF10E100176EC5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3E40741526DF10E100176EC5 /* Luvo.app */,
+				3E40741526DF10E100176EC5 /* .app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3E40741726DF10E100176EC5 /* Luvo */ = {
+		3E40741726DF10E100176EC5 /* Wellness */ = {
 			isa = PBXGroup;
 			children = (
-				2DD00CD129B42CC400719D7D /* LuvoDebug.entitlements */,
 				3E0EAA8427F5E44B00D217C5 /* GoogleService-Info.plist */,
-				3E3A6E7A274217E000B2EB81 /* Luvo.entitlements */,
 				3E5E813E26EF73EB00E37432 /* HTTPUtility */,
 				3E5E813526EF3BAA00E37432 /* Common */,
 				3EE9538326E729D900DACB70 /* InstagramSDK */,
@@ -1610,10 +1598,9 @@
 				00653D2A2A15F52700C09E30 /* GifLoader.swift */,
 				2D8467EC2969718F00F8E97F /* Font */,
 				3E40742926DF10E700176EC5 /* Info.plist */,
-				3E40742126DF10E100176EC5 /* Luvo.xcdatamodeld */,
 				3E48F3B926E63EF200732DC2 /* Readme.rtf */,
 			);
-			path = Luvo;
+			path = Wellness;
 			sourceTree = "<group>";
 		};
 		3E40743026DF125200176EC5 /* Storyboards */ = {
@@ -2565,7 +2552,7 @@
 			children = (
 				00A522B2287FEEB0003526E1 /* HealthKitUI.framework */,
 				3E3A6E7B274217E000B2EB81 /* HealthKit.framework */,
-				9CF14524B78139DEE129AFDB /* Pods_Luvo.framework */,
+				9CF14524B78139DEE129AFDB /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2622,7 +2609,7 @@
 				0063FA362A2F034700F8725E /* VirtualBackground */,
 			);
 			productName = Luvo;
-			productReference = 3E40741526DF10E100176EC5 /* Luvo.app */;
+			productReference = 3E40741526DF10E100176EC5 /* .app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2639,7 +2626,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3E40741026DF10E100176EC5 /* Build configuration list for PBXProject "Luvo" */;
+			buildConfigurationList = 3E40741026DF10E100176EC5 /* Build configuration list for PBXProject "WellnessApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -2739,7 +2726,6 @@
 				004F848E295C206F000B13CA /* ChatWithAdminTableViewCell.xib in Resources */,
 				3E9DAE0026E0DF24008D78F8 /* Nunito-BlackItalic.ttf in Resources */,
 				3E9E459B2785E614008D91FB /* PointsTableViewCell.xib in Resources */,
-				3EE9538B26E7A2A100DACB70 /* WelcomeToLuvo.mp3 in Resources */,
 				3EF10D49270DB420002851E9 /* WorkSans-ExtraBoldItalic.ttf in Resources */,
 				3E309F5127394C4900B37F8F /* Exercise.storyboard in Resources */,
 				004F849A295C2BCD000B13CA /* UserChatReceiveTableViewCell.xib in Resources */,
@@ -3016,7 +3002,6 @@
 				3EFFFE37271950EE0003C066 /* GratitudeAddResponse.swift in Sources */,
 				3EE60B01275605AA00A20164 /* WaterSetReminderViewController.swift in Sources */,
 				009CAF7D297015280051DE11 /* CoachCallUserHandRaiseResponse.swift in Sources */,
-				3E24524326E289E4002EE3F4 /* Constant.swift in Sources */,
 				00A05214299136350026E913 /* CoachRecoredeSessionTableViewCell.swift in Sources */,
 				3EA0B46D26E9C2F00066428C /* IntroViewController.swift in Sources */,
 				3E5BD9F7270CA4AC0072375F /* DateExtension.swift in Sources */,
@@ -3200,7 +3185,6 @@
 				3EE9D0532704BC5F00D9A1AF /* UIImageView+IBInspect.swift in Sources */,
 				3E12F5D227590568002DF257 /* ColorUtils.swift in Sources */,
 				3E0766082776D1340032ADBA /* BlogCommentSendResponse.swift in Sources */,
-				3E40742326DF10E100176EC5 /* Luvo.xcdatamodeld in Sources */,
 				3EC678B4278C548600A27F32 /* CircularProgressView.swift in Sources */,
 				3E08AA6C270C5F2F00B48AB7 /* HomeViewModel.swift in Sources */,
 				3EBBBF9326FDD24A0006DDAB /* ChakraVCExt.swift in Sources */,
@@ -3357,27 +3341,30 @@
 		};
 		3E40742D26DF10E700176EC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C685D18E4A9A2F84AC11F7CC /* Pods-Luvo.debug.xcconfig */;
+			baseConfigurationReference = C685D18E4A9A2F84AC11F7CC /* Pods-debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
-				CODE_SIGN_ENTITLEMENTS = Luvo/LuvoDebug.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 9U4NNG86X9;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = Luvo/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_MAP_FILE_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.5;
-				PRODUCT_BUNDLE_IDENTIFIER = com.BCS.Luvo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_MODULE_NAME = "";
+				PRODUCT_NAME = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -3386,27 +3373,30 @@
 		};
 		3E40742E26DF10E700176EC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 805CA57DCC03FCFEC1DED1C6 /* Pods-Luvo.release.xcconfig */;
+			baseConfigurationReference = 805CA57DCC03FCFEC1DED1C6 /* Pods-.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
-				CODE_SIGN_ENTITLEMENTS = Luvo/Luvo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 9U4NNG86X9;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = Luvo/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_MAP_FILE_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.5;
-				PRODUCT_BUNDLE_IDENTIFIER = com.BCS.Luvo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_MODULE_NAME = "";
+				PRODUCT_NAME = "";
 				PROVISIONING_PROFILE_SPECIFIER = "Nilanjan Ghosh_dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -3416,7 +3406,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3E40741026DF10E100176EC5 /* Build configuration list for PBXProject "Luvo" */ = {
+		3E40741026DF10E100176EC5 /* Build configuration list for PBXProject "WellnessApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E40742A26DF10E700176EC5 /* Debug */,
@@ -3569,19 +3559,6 @@
 			productName = StripePaymentsUI;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		3E40742126DF10E100176EC5 /* Luvo.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3E40742226DF10E100176EC5 /* Luvo.xcdatamodel */,
-			);
-			currentVersion = 3E40742226DF10E100176EC5 /* Luvo.xcdatamodel */;
-			path = Luvo.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3E40740D26DF10E100176EC5 /* Project object */;
 }

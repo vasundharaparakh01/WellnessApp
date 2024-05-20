@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "agorartcengine_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AgoraIO/AgoraRtcEngine_iOS",
+      "state" : {
+        "revision" : "bc74b9d532588d6b3e021acb7b1d7442fe1bdaba",
+        "version" : "4.3.1"
+      }
+    },
+    {
+      "identity" : "stripe-ios-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stripe/stripe-ios-spm",
+      "state" : {
+        "revision" : "9d491f5076b886b19c6c020f1f06e4cc045ce5c3",
+        "version" : "23.27.2"
+      }
+    }
+  ],
+  "version" : 2
+}
