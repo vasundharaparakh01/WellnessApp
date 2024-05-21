@@ -140,7 +140,7 @@
 		00FF7D0C295D75A30051CC9F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3A6E7B274217E000B2EB81 /* HealthKit.framework */; };
 		00FF7D0F295D75A50051CC9F /* HealthKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A522B2287FEEB0003526E1 /* HealthKitUI.framework */; };
 		00FF7D11295D75A70051CC9F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF14524B78139DEE129AFDB /* Pods.framework */; };
-		0B7B43842BFC96A1009A07BF /* .app in Resources */ = {isa = PBXBuildFile; fileRef = 3E40741526DF10E100176EC5 /* .app */; };
+		0B7B43842BFC96A1009A07BF /* WellnessApp in Resources */ = {isa = PBXBuildFile; fileRef = 3E40741526DF10E100176EC5 /* WellnessApp */; };
 		2D01086728615924005C97BE /* VideoPlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D01086628615924005C97BE /* VideoPlay.storyboard */; };
 		2D01086E28615B33005C97BE /* VideoPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01086D28615B33005C97BE /* VideoPlay.swift */; };
 		2D1B420E29D2271D00FA0D81 /* StripeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B420D29D2271D00FA0D81 /* StripeVC.swift */; };
@@ -724,7 +724,7 @@
 		3E3DC9302775FA3B00BF5AB7 /* LikesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesResponse.swift; sourceTree = "<group>"; };
 		3E3DC9322775FAB900BF5AB7 /* LikesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesRequest.swift; sourceTree = "<group>"; };
 		3E3DC9342775FB0D00BF5AB7 /* LikesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewModel.swift; sourceTree = "<group>"; };
-		3E40741526DF10E100176EC5 /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E40741526DF10E100176EC5 /* WellnessApp */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = WellnessApp; path = ../../../../../../../../Desktop/git/WellnessApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E40741826DF10E100176EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E40741A26DF10E100176EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3E40741F26DF10E100176EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -1568,7 +1568,7 @@
 		3E40741626DF10E100176EC5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3E40741526DF10E100176EC5 /* .app */,
+				3E40741526DF10E100176EC5 /* WellnessApp */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2608,7 +2608,7 @@
 				0063FA362A2F034700F8725E /* VirtualBackground */,
 			);
 			productName = app_name;
-			productReference = 3E40741526DF10E100176EC5 /* .app */;
+			productReference = 3E40741526DF10E100176EC5 /* WellnessApp */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2661,7 +2661,7 @@
 				3EF10D4E270DB420002851E9 /* WorkSans-ThinItalic.ttf in Resources */,
 				3E08C914271FDD4500988B79 /* BreathingExercise.storyboard in Resources */,
 				3E9DAE0226E0DF24008D78F8 /* Nunito-SemiBoldItalic.ttf in Resources */,
-				0B7B43842BFC96A1009A07BF /* .app in Resources */,
+				0B7B43842BFC96A1009A07BF /* WellnessApp in Resources */,
 				3EF10D54270DB420002851E9 /* WorkSans-ExtraLightItalic.ttf in Resources */,
 				3E5922EA2786C8D40051803F /* Badges.storyboard in Resources */,
 				3E30656B2795A75A0043383E /* ChangePassword.storyboard in Resources */,

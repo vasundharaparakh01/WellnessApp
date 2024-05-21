@@ -10,12 +10,11 @@ import Foundation
 class Common {
     
     fileprivate enum BaseUrl : String {
-      case live = "https://admin.zest2live.com/v2/"    //http://54.190.192.105:9111/"  "mailto:socialid":"113914960338667103461","socialtype":"google","useremail":"apptest.beas@gmail.com"
-        //https://github.com/AgoraIO/AgoraRtcEngine_iOS
-   // https://github.com/stripe/stripe-ios-spm
+      case live = "https://"
+        
         //
-      case dev  = "http://beas.in:5000/v2/"
-     //   case dev  = "http://beas.in:5000/"
+      case dev  = "http://"
+     //   case dev  = "http://"
     }
     
 
