@@ -32,7 +32,7 @@
         <!--Profile View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="ProfileViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="ProfileViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,7 +119,7 @@
                                                 <color key="textColor" red="0.12549019607843137" green="0.21568627450980393" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wtv-mh-f57" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wtv-mh-f57" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="525" width="374" height="50"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJS-RD-ZaL">
@@ -169,7 +169,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unV-CE-IXn" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unV-CE-IXn" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="866" width="374" height="80"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 9133" translatesAutoresizingMaskIntoConstraints="NO" id="csh-PZ-yCT">
@@ -253,7 +253,7 @@
                                                 <color key="textColor" red="0.12549019610000001" green="0.2156862745" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5U-y3-5eC" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5U-y3-5eC" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="612" width="374" height="50"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p4b-fv-On9">
@@ -312,7 +312,7 @@
                                                 <color key="textColor" red="0.12549019610000001" green="0.2156862745" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bS0-08-wIX" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bS0-08-wIX" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="699" width="374" height="50"/>
                                                 <subviews>
                                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="REu-GD-l8H">
@@ -372,7 +372,7 @@
                                                 <color key="textColor" red="0.12549019610000001" green="0.2156862745" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKG-iq-a1w" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKG-iq-a1w" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="786" width="374" height="50"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number (Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Av-8E-PVm">
@@ -442,7 +442,7 @@
                                                     <constraint firstAttribute="height" constant="43.5" id="lMM-ZJ-BHp"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nbo-qu-Pxh" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nbo-qu-Pxh" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="954" width="374" height="80"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trophy" translatesAutoresizingMaskIntoConstraints="NO" id="W6h-kZ-0F0">
@@ -598,7 +598,7 @@
                                             <action selector="btnNotification:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="x5b-dQ-Li5"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDx-0h-UXa" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDx-0h-UXa" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="390" y="52" width="16" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3Q-on-uwJ">

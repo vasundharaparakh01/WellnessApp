@@ -1,6 +1,6 @@
 //
 //  CoachViewAgoraVC.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 15/12/22.
 //
@@ -483,7 +483,7 @@ class CoachViewAgoraVC: UIViewController,UICollectionViewDelegate,UICollectionVi
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -710,7 +710,7 @@ class CoachViewAgoraVC: UIViewController,UICollectionViewDelegate,UICollectionVi
         ///willuncommentatthetimeofconference
         
         
-        let refreshAlert = UIAlertController(title: "Luvo", message: "You want to end this session", preferredStyle: UIAlertController.Style.alert)
+        let refreshAlert = UIAlertController(title: "app_name", message: "You want to end this session", preferredStyle: UIAlertController.Style.alert)
           refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
         print("Handle Cancel Logic here")
               
@@ -782,7 +782,7 @@ class CoachViewAgoraVC: UIViewController,UICollectionViewDelegate,UICollectionVi
     
 //    @IBAction func btnEndCall(_ sender: Any) {
 //
-//        let refreshAlert = UIAlertController(title: "Luvo", message: "You want to end this session", preferredStyle: UIAlertController.Style.alert)
+//        let refreshAlert = UIAlertController(title: "app_name", message: "You want to end this session", preferredStyle: UIAlertController.Style.alert)
 //          refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
 //        print("Handle Cancel Logic here")
 //
@@ -838,8 +838,8 @@ class CoachViewAgoraVC: UIViewController,UICollectionViewDelegate,UICollectionVi
 //
 //        // Do any additional setup after loading the view.
 //
-//      //   let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to start a Conference Call", preferredStyle: UIAlertController.Style.alert)
-////         let refreshAlert = UIAlertController(title: "Luvo", message: "You want to end this session", preferredStyle: UIAlertController.Style.alert)
+//      //   let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to start a Conference Call", preferredStyle: UIAlertController.Style.alert)
+////         let refreshAlert = UIAlertController(title: "app_name", message: "You want to end this session", preferredStyle: UIAlertController.Style.alert)
 ///*
 //
 //         refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
@@ -965,7 +965,7 @@ extension CoachViewAgoraVC: AgoraUserProfileModelDelegate
 
 
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
 
     }
@@ -1043,7 +1043,7 @@ extension CoachViewAgoraVC: AllUserChatModelDelegate
 //        if(coachResponse?.status != nil && coachResponse?.status?.lowercased() == ConstantStatusAPI.success) {
 //            self.view.stopActivityIndicator()
 //
-//     //   let refreshAlert = UIAlertController(title: "Luvo", message: "You want to end this session", preferredStyle: UIAlertController.Style.alert)
+//     //   let refreshAlert = UIAlertController(title: "app_name", message: "You want to end this session", preferredStyle: UIAlertController.Style.alert)
 //     //   refreshAlert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { (action: UIAlertAction!) in
 //           //   print("Handle Cancel Logic here")
 //
@@ -1075,7 +1075,7 @@ extension CoachViewAgoraVC : CoachViewStatusModelDelegate
         if(coachResponse?.status != nil && coachResponse?.status?.lowercased() == ConstantStatusAPI.success) {
             self.view.stopActivityIndicator()
         
-//     //   let refreshAlert = UIAlertController(title: "Luvo", message: "You want to end this session", preferredStyle: UIAlertController.Style.alert)
+//     //   let refreshAlert = UIAlertController(title: "app_name", message: "You want to end this session", preferredStyle: UIAlertController.Style.alert)
 //     //   refreshAlert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { (action: UIAlertAction!) in
 //           //   print("Handle Cancel Logic here")
 //
@@ -1092,8 +1092,8 @@ extension CoachViewAgoraVC : CoachViewStatusModelDelegate
 //        //}
             
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to start a Conference Call", preferredStyle: UIAlertController.Style.alert)
-   //         let refreshAlert = UIAlertController(title: "Luvo", message: "You want to end this session", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to start a Conference Call", preferredStyle: UIAlertController.Style.alert)
+   //         let refreshAlert = UIAlertController(title: "app_name", message: "You want to end this session", preferredStyle: UIAlertController.Style.alert)
 
     
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in

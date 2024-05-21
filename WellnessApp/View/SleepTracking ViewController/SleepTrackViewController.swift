@@ -1,6 +1,6 @@
 //
 //  SleepTrackViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 02/02/22.
 //
@@ -227,7 +227,7 @@ class SleepTrackViewController: UIViewController{
     @IBAction func btnRecords(_ sender: Any) {
         //Accelerometer
 //        if self.motion.isAccelerometerActive {
-//            self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+//            self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
 //                                         message: "Do you want to stop ongoing sleep tracking",
 //                                         alertStyle: .alert,
 //                                         actionTitles: ["OK","Cancel"],
@@ -316,7 +316,7 @@ class SleepTrackViewController: UIViewController{
         {
             print("first phase")*/
         if boolStartStop {
-            openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+            openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                     message: "Sleep monitor takes at least 30 minutes to measure your sleep behavior. The ideal way is to keep the phone next to the bed, preferably on the nightstand.",
                                     alertStyle: .alert,
                                     actionTitles: ["Cancel","OK"], actionStyles: [.default,.default],
@@ -365,7 +365,7 @@ class SleepTrackViewController: UIViewController{
                                                 
                                                 
                                             } else {
-                                                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Your device doesn't support sleep tracking")
+                                                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Your device doesn't support sleep tracking")
                                             }
                                         }])
         }
@@ -541,7 +541,7 @@ class SleepTrackViewController: UIViewController{
                         {
                         debugPrint("hello")
                             
-                            let refreshAlert = UIAlertController(title: "Luvo", message: "No sleep record found from Apple Watch", preferredStyle: UIAlertController.Style.alert)
+                            let refreshAlert = UIAlertController(title: "app_name", message: "No sleep record found from Apple Watch", preferredStyle: UIAlertController.Style.alert)
 
                                         refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                                               print("Handle Ok logic here")
@@ -572,7 +572,7 @@ class SleepTrackViewController: UIViewController{
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -640,7 +640,7 @@ extension SleepTrackViewController {
         // "http://beas.in:5000/music-1647310363635.mp3"
         // "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
         // "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
-        // "https://luvo.s3.us-east-2.amazonaws.com/uploads/musics/music-1638000779365.mp3"
+        // "https://app_name.s3.us-east-2.amazonaws.com/uploads/musics/music-1638000779365.mp3"
         //let finalPath = "http%3A%2F%2Fbeas.in%3A5000%2Fmusic-1647320218414.mp3"
         
 //        let finalPath = Common.WebserviceAPI.baseURL+withMediaPath
@@ -745,7 +745,7 @@ extension SleepTrackViewController: AVAudioPlayerDelegate, AVAudioRecorderDelega
                     //Time Track
                     self.startTrackTime = Date()
                 } else {
-                    self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                    self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                                  message: "Please turn on microphone access from your device settings and try again",
                                                  alertStyle: .alert,
                                                  actionTitles: ["Open Settings", "Cancel"],
@@ -759,7 +759,7 @@ extension SleepTrackViewController: AVAudioPlayerDelegate, AVAudioRecorderDelega
                                                         //Cancel
                                                     }])
                     
-//                    self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Turn on microphone access from your device settings and try again")
+//                    self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Turn on microphone access from your device settings and try again")
                 }
             })
         }
@@ -1027,7 +1027,7 @@ extension SleepTrackViewController: SleepWatchStatDelegate
     
     func didReceiveSleepWatchStatDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
    
@@ -1093,7 +1093,7 @@ extension SleepTrackViewController: SleepViewModelDelegate {
                     let connectionStatus = ConnectionManager.shared.hasConnectivity()
                     if (connectionStatus == false) {
                         DispatchQueue.main.async {
-                            self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                            self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                             return
                         }
                     } else {
@@ -1174,20 +1174,20 @@ extension SleepTrackViewController: SleepViewModelDelegate {
         self.view.stopActivityIndicator()
         if(sleepDataUploadResponse?.status != nil && sleepDataUploadResponse?.status?.lowercased() == ConstantStatusAPI.success) {
             if let message = sleepDataUploadResponse?.message {
-                showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+                showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
             }
             
             //Remove stored sleep data
             UserDefaults.standard.removeObject(forKey: ConstantUserDefaultTag.udSleepData)
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: sleepDataUploadResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: sleepDataUploadResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveSleepDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -1197,7 +1197,7 @@ extension SleepTrackViewController: SleepDeleteDataDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -1216,13 +1216,13 @@ extension SleepTrackViewController: SleepDeleteDataDelegate {
             debugPrint("Sleep Data Deletion Success")
         } else {
             debugPrint("Sleep Data Deletion Failed")
-            self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Sleep track failed to start. Please try again.")
+            self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Sleep track failed to start. Please try again.")
         }
     }
     
     func didReceiveSleepDeleteDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 

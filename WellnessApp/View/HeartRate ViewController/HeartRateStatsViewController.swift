@@ -1,6 +1,6 @@
 //
 //  HeartRateStatsViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 02/12/21.
 //
@@ -243,7 +243,7 @@ class HeartRateStatsViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -450,21 +450,21 @@ extension HeartRateStatsViewController: HeartStatDelegate {
                     refreshGraph()
                 } else {
                     clearGraph()
-                    showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: heartStatDataResponse?.message ?? ConstantStatusAPI.failed)
+                    showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: heartStatDataResponse?.message ?? ConstantStatusAPI.failed)
                 }
             } else {
                 clearGraph()
-                showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: heartStatDataResponse?.message ?? ConstantStatusAPI.failed)
+                showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: heartStatDataResponse?.message ?? ConstantStatusAPI.failed)
             }
             //Refresh Data
             refreshData()
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: heartStatDataResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: heartStatDataResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveHeartStatDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

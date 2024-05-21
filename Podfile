@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Luvo' do
+target 'app_name' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Luvo
+  # Pods for app_name
 
 pod 'FBSDKLoginKit'
 pod 'IQKeyboardManagerSwift'

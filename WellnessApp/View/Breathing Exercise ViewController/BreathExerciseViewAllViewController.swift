@@ -1,6 +1,6 @@
 //
 //  BreathExerciseViewAllViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 21/10/21.
 //
@@ -95,7 +95,7 @@ class BreathExerciseViewAllViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -199,12 +199,12 @@ extension BreathExerciseViewAllViewController: BreathingExerciseViewModelDelegat
                 }
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveBreathingExerciseListDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

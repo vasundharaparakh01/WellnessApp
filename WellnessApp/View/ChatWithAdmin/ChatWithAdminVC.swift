@@ -1,6 +1,6 @@
 //
 //  ChatWithAdminVC.swift
-//  Luvo
+ 
 //
 //  Created by Sahidul on 23/12/21.
 //
@@ -123,7 +123,7 @@ class ChatWithAdminVC: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -150,7 +150,7 @@ class ChatWithAdminVC: UIViewController {
             let connectionStatus = ConnectionManager.shared.hasConnectivity()
             if (connectionStatus == false) {
                 DispatchQueue.main.async {
-                    self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                    self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                     return
                 }
             } else {
@@ -167,7 +167,7 @@ class ChatWithAdminVC: UIViewController {
     }
     
     @IBAction func btnAttachmentAction(_ sender: Any) {
-//        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Under development")
+//        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Under development")
         ImagePickerManager().pickImageGallery(self) { image in
             let resizeImage = image.resizeWithWidth(width: 200)!
             let jpegRepresent = resizeImage.jpegData(compressionQuality: 1.0)
@@ -175,7 +175,7 @@ class ChatWithAdminVC: UIViewController {
             let connectionStatus = ConnectionManager.shared.hasConnectivity()
             if (connectionStatus == false) {
                 DispatchQueue.main.async {
-                    self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                    self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                     return
                 }
             } else {
@@ -195,7 +195,7 @@ class ChatWithAdminVC: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -339,7 +339,7 @@ extension ChatWithAdminVC: ChatWithAdminViewModelDelegate {
                 messageArraySection = arrayWithSection
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
         refreshControl.endRefreshing()
     }
@@ -350,12 +350,12 @@ extension ChatWithAdminVC: ChatWithAdminViewModelDelegate {
             messageTV.text = ""
             self.getChatDetails()
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveMessagesDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

@@ -1,6 +1,6 @@
 //
 //  SoothingVideosListViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 26/10/21.
 //
@@ -99,7 +99,7 @@ class SoothingVideosListViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -193,7 +193,7 @@ extension SoothingVideosListViewController: UITableViewDelegate, UITableViewData
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -228,13 +228,13 @@ extension SoothingVideosListViewController: SoothingVideoViewModelDelegate {
                 }
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveSoothingVideoDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -246,15 +246,15 @@ extension SoothingVideosListViewController: FavouritesViewModelDelegate {
 //            dump(favouriteDataResponse)
             
             guard let message = favouriteDataResponse?.message else { return }
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveFavouriteDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }    
 }

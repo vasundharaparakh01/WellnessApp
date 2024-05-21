@@ -25,7 +25,7 @@
         <!--Meditation Levels View Controller-->
         <scene sceneID="7ch-uS-YfU">
             <objects>
-                <viewController storyboardIdentifier="MeditationLevelsViewController" id="k5s-IN-coe" customClass="MeditationLevelsViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MeditationLevelsViewController" id="k5s-IN-coe" customClass="MeditationLevelsViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bcV-xy-1Ck">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,14 +34,14 @@
                                 <rect key="frame" x="0.0" y="104" width="414" height="792"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MeditationLevelCell" rowHeight="200" id="xWb-hZ-lqM" customClass="MeditationLevelCell" customModule="Luvo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MeditationLevelCell" rowHeight="200" id="xWb-hZ-lqM" customClass="MeditationLevelCell" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xWb-hZ-lqM" id="ri4-S2-o6m">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5M-HQ-07y" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5M-HQ-07y" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="5" width="374" height="170"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crownBW" translatesAutoresizingMaskIntoConstraints="NO" id="Di3-ua-wOd">
@@ -68,7 +68,7 @@
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVJ-WO-9ZZ" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVJ-WO-9ZZ" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                             <rect key="frame" x="149" y="131" width="105" height="22"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPI-uP-u8L">
@@ -92,7 +92,7 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
-                                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIc-VA-rCO" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIc-VA-rCO" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                             <rect key="frame" x="261" y="131" width="105" height="22"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qja-YS-F7F">
@@ -210,7 +210,7 @@
                                             <action selector="btnNotification:" destination="k5s-IN-coe" eventType="touchUpInside" id="opL-9f-e6O"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fhj-fE-rDv" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fhj-fE-rDv" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="390" y="52" width="16" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8Z-3v-SV0">
@@ -283,7 +283,7 @@
         <!--Meditation Question Time View Controller-->
         <scene sceneID="qgV-Vx-br2">
             <objects>
-                <viewController storyboardIdentifier="MeditationQuestionTimeViewController" id="56p-TH-SE6" customClass="MeditationQuestionTimeViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MeditationQuestionTimeViewController" id="56p-TH-SE6" customClass="MeditationQuestionTimeViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dLM-0h-SUO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -319,14 +319,14 @@
                                                     <constraint firstAttribute="height" constant="280" id="kL2-6S-DfK"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ExerciseTimeCell" rowHeight="70" id="Rs9-ZR-1dq" customClass="ExerciseTimeCell" customModule="Luvo" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ExerciseTimeCell" rowHeight="70" id="Rs9-ZR-1dq" customClass="ExerciseTimeCell" customModule="app_name" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44.5" width="388" height="70"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rs9-ZR-1dq" id="Gaq-dq-5rt">
                                                             <rect key="frame" x="0.0" y="0.0" width="388" height="70"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRU-Ky-Ejv" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRU-Ky-Ejv" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                                     <rect key="frame" x="9" y="11" width="370" height="48"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radioOff" translatesAutoresizingMaskIntoConstraints="NO" id="iXB-Fb-BdG">
@@ -382,7 +382,7 @@
                                                     <outlet property="delegate" destination="56p-TH-SE6" id="NEC-rD-SU5"/>
                                                 </connections>
                                             </tableView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RE-Qd-dPc" customClass="UIBUtton_Designable" customModule="Luvo" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RE-Qd-dPc" customClass="UIBUtton_Designable" customModule="app_name" customModuleProvider="target">
                                                 <rect key="frame" x="281" y="724" width="120" height="31"/>
                                                 <color key="backgroundColor" red="0.59999999999999998" green="0.023529411760000001" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -465,7 +465,7 @@
                                             <action selector="btnNotification:" destination="56p-TH-SE6" eventType="touchUpInside" id="n9C-Qp-8yr"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ys8-YD-p9C" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ys8-YD-p9C" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="390" y="52" width="16" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2d-ow-Vuh">
@@ -540,7 +540,7 @@
                                         <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pfT-gO-VPf" customClass="UIBUtton_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pfT-gO-VPf" customClass="UIBUtton_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="77" y="485" width="260" height="48"/>
                                         <color key="backgroundColor" red="0.81568627449999997" green="0.35294117650000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -621,7 +621,7 @@
         <!--Meditation Audio Player View Controller-->
         <scene sceneID="NIs-48-7fV">
             <objects>
-                <viewController storyboardIdentifier="MeditationAudioPlayerViewController" id="5kn-pR-hOk" customClass="MeditationAudioPlayerViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MeditationAudioPlayerViewController" id="5kn-pR-hOk" customClass="MeditationAudioPlayerViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b4l-tr-cG7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -673,7 +673,7 @@
                                             <constraint firstAttribute="height" constant="81" id="Qqk-LY-iVD"/>
                                         </constraints>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qE-HC-4Aj" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qE-HC-4Aj" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="117" y="146.5" width="180" height="180"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circleMiddleWoman" translatesAutoresizingMaskIntoConstraints="NO" id="eEW-XT-LmB">
@@ -910,7 +910,7 @@
                                             <action selector="btnNotification:" destination="56p-TH-SE6" eventType="touchUpInside" id="yMX-DU-VjI"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yN7-cX-neS" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yN7-cX-neS" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="390" y="52" width="16" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1V-3U-5UX">
@@ -976,7 +976,7 @@
                                         <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rxm-Lu-BQS" customClass="UIBUtton_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rxm-Lu-BQS" customClass="UIBUtton_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="77" y="335" width="260" height="48"/>
                                         <color key="backgroundColor" red="0.81568627449999997" green="0.35294117650000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -1074,7 +1074,7 @@
         <!--Full Audio Player View Controller-->
         <scene sceneID="YHG-IV-9vj">
             <objects>
-                <viewController storyboardIdentifier="FullAudioPlayerViewController" id="QdC-yg-f8n" customClass="FullAudioPlayerViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FullAudioPlayerViewController" id="QdC-yg-f8n" customClass="FullAudioPlayerViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lD4-5L-JIl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1150,7 +1150,7 @@
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4l-ix-aBD" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4l-ix-aBD" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="165" width="70" height="22"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cA-2B-I9p">
@@ -1281,7 +1281,7 @@
                                             <constraint firstItem="u7d-os-CHE" firstAttribute="leading" secondItem="KLf-dT-vxA" secondAttribute="trailing" constant="22" id="x6E-qb-rvS"/>
                                         </constraints>
                                     </view>
-                                    <slider opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="LqL-V1-tt0" customClass="MarkSlider" customModule="Luvo" customModuleProvider="target">
+                                    <slider opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="LqL-V1-tt0" customClass="MarkSlider" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="-60" y="168" width="170" height="31"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1364,7 +1364,7 @@
                                             <action selector="btnNotification:" destination="QdC-yg-f8n" eventType="touchUpInside" id="v0h-QA-oW5"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADc-0T-rBz" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADc-0T-rBz" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="390" y="52" width="16" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4x-Yp-EVO">
@@ -1431,7 +1431,7 @@
                                         <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ypc-zM-7LO" customClass="UIBUtton_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ypc-zM-7LO" customClass="UIBUtton_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="77" y="335" width="260" height="48"/>
                                         <color key="backgroundColor" red="0.81568627449999997" green="0.35294117650000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -1524,7 +1524,7 @@
         <!--Meditation Audio List View Controller-->
         <scene sceneID="6gW-CT-Fd1">
             <objects>
-                <viewController storyboardIdentifier="MeditationAudioListViewController" id="LmG-zv-YsU" customClass="MeditationAudioListViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MeditationAudioListViewController" id="LmG-zv-YsU" customClass="MeditationAudioListViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ukf-KH-DbE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1533,17 +1533,17 @@
                                 <rect key="frame" x="0.0" y="151" width="414" height="711"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MeditationAudioListCell" rowHeight="157" id="hoM-iI-QP5" customClass="MeditationAudioListCell" customModule="Luvo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MeditationAudioListCell" rowHeight="157" id="hoM-iI-QP5" customClass="MeditationAudioListCell" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="157"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hoM-iI-QP5" id="vLd-NQ-b0U">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfq-vK-aNx" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfq-vK-aNx" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="5" width="374" height="137"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 1" translatesAutoresizingMaskIntoConstraints="NO" id="vab-yk-QBb" customClass="UIImageView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 1" translatesAutoresizingMaskIntoConstraints="NO" id="vab-yk-QBb" customClass="UIImageView_Designable" customModule="app_name" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="137"/>
                                                             <color key="tintColor" systemColor="tintColor"/>
                                                             <constraints>
@@ -1555,7 +1555,7 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerHome" translatesAutoresizingMaskIntoConstraints="NO" id="HFm-ig-f8O" customClass="UIImageView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerHome" translatesAutoresizingMaskIntoConstraints="NO" id="HFm-ig-f8O" customClass="UIImageView_Designable" customModule="app_name" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="19" width="100" height="100"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="2eu-i4-Pdg"/>
@@ -1567,7 +1567,7 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DfS-Z5-h6A" customClass="UIImageView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DfS-Z5-h6A" customClass="UIImageView_Designable" customModule="app_name" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="19" width="100" height="100"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1606,7 +1606,7 @@
                                                                 <action selector="buttonAction:" destination="hoM-iI-QP5" eventType="touchUpInside" id="B81-EF-yPL"/>
                                                             </connections>
                                                         </button>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLu-3a-Uw6" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLu-3a-Uw6" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                             <rect key="frame" x="177" y="19" width="124" height="22"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cad-0t-TTo">
@@ -1642,7 +1642,7 @@
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rot-E0-0uC" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rot-E0-0uC" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="137"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listen to the previous audio for atleast 5 minutes to unlock" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="vJX-06-p6O">
@@ -1651,7 +1651,7 @@
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="Ija-gU-eQe" customClass="UIImageView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="Ija-gU-eQe" customClass="UIImageView_Designable" customModule="app_name" customModuleProvider="target">
                                                                     <rect key="frame" x="15" y="19" width="100" height="100"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="100" id="e65-6b-ZSe"/>
@@ -1797,7 +1797,7 @@
                                             <action selector="btnNotification:" destination="LmG-zv-YsU" eventType="touchUpInside" id="dj4-Im-zmc"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KzO-KP-KNH" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KzO-KP-KNH" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="390" y="52" width="16" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WI3-7r-s4N">

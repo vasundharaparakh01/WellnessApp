@@ -1,6 +1,6 @@
 //
 //  CircularProgressView.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 10/01/22.
 //

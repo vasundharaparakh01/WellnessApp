@@ -17,7 +17,7 @@
         <!--Breath Exercise View All View Controller-->
         <scene sceneID="JsO-pi-mnb">
             <objects>
-                <viewController storyboardIdentifier="BreathExerciseViewAllViewController" id="mUu-bp-1s3" customClass="BreathExerciseViewAllViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BreathExerciseViewAllViewController" id="mUu-bp-1s3" customClass="BreathExerciseViewAllViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uTV-TL-J05">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,14 +53,14 @@
                                                     <constraint firstAttribute="height" constant="322" id="Ih8-fj-JZK"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BreathExerciseCell" rowHeight="70" id="eba-kL-0gC" customClass="BreathExerciseCell" customModule="Luvo" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BreathExerciseCell" rowHeight="70" id="eba-kL-0gC" customClass="BreathExerciseCell" customModule="app_name" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44.5" width="388" height="70"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eba-kL-0gC" id="lmg-xc-qt1">
                                                             <rect key="frame" x="0.0" y="0.0" width="388" height="70"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCb-Cj-76r" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCb-Cj-76r" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                                     <rect key="frame" x="9" y="11" width="370" height="48"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radioOff" translatesAutoresizingMaskIntoConstraints="NO" id="Kcf-A8-7EM">
@@ -179,7 +179,7 @@
                                             <action selector="btnNotification:" destination="mUu-bp-1s3" eventType="touchUpInside" id="Hhl-vN-3xD"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utg-RX-57t" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utg-RX-57t" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="390" y="52" width="16" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60d-4Z-Vj4">

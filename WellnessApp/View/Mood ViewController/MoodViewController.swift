@@ -1,6 +1,6 @@
 //
 //  MoodViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 2022-01-31.
 //
@@ -78,7 +78,7 @@ class MoodViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -146,17 +146,17 @@ extension MoodViewController: MoodViewModelDelegate {
                 popToRootVC(msg: ConstantStatusAPI.success)
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: moodResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: moodResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveMoodError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     fileprivate func popToRootVC(msg: String) {
-        openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+        openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                 message: msg,
                                 alertStyle: .alert, actionTitles: ["OK"],
                                 actionStyles: [.default],

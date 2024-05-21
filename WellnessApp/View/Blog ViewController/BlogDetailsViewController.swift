@@ -1,6 +1,6 @@
 //
 //  BlogDetailsViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 19/10/21.
 //
@@ -100,7 +100,7 @@ class BlogDetailsViewController: UIViewController, WKNavigationDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -278,16 +278,16 @@ extension BlogDetailsViewController: LikesViewModelDelegate {
 //            dump(likesDataResponse)
             
             guard let message = likesDataResponse?.message else { return }
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: likesDataResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: likesDataResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveLikesDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     

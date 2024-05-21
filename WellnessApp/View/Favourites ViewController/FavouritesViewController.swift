@@ -1,6 +1,6 @@
 //
 //  FavouritesViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 2022-01-20.
 //
@@ -92,7 +92,7 @@ class FavouritesViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -251,7 +251,7 @@ extension FavouritesViewController: UITableViewDelegate, UITableViewDataSource {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -278,7 +278,7 @@ extension FavouritesViewController: FavouritesListViewModelDelegate {
 //                arrayVideoList.removeAll()
 //                if arrMusic.count == 0 && videoMusic?.count == 0 {
 //                    if let message = favouriteListDataResponse?.message {
-//                        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+//                        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
 //                    }
 //                } else if arrMusic.count > 0{
 //                    arrayAudioList = arrMusic
@@ -293,7 +293,7 @@ extension FavouritesViewController: FavouritesListViewModelDelegate {
                 arrayAudioList.removeAll()
                 if arrMusic.count == 0 {
                     if let message = favouriteListDataResponse?.message {
-                        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+                        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
                     }
                 } else if arrMusic.count > 0{
                     arrayAudioList = arrMusic
@@ -306,7 +306,7 @@ extension FavouritesViewController: FavouritesListViewModelDelegate {
                 arrayVideoList.removeAll()
                 if videoMusic.count == 0 {
                     if let message = favouriteListDataResponse?.message {
-                        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+                        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
                     }
                 } else if videoMusic.count > 0 {
                     arrayVideoList = videoMusic
@@ -319,13 +319,13 @@ extension FavouritesViewController: FavouritesListViewModelDelegate {
 
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveFavouriteListDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -337,17 +337,17 @@ extension FavouritesViewController: FavouritesViewModelDelegate {
 //            dump(favouriteDataResponse)
             
             guard let message = favouriteDataResponse?.message else { return }
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
             
             getFavList()
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveFavouriteDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

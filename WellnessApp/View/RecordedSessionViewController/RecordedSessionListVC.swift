@@ -1,6 +1,6 @@
 //
 //  RecordedSessionListVC.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 12/12/22.
 //
@@ -350,7 +350,7 @@ extension RecordedSessionListVC: RecordedSessionViewModelDelegate
             
         }
         else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
             
     }
@@ -358,7 +358,7 @@ extension RecordedSessionListVC: RecordedSessionViewModelDelegate
     func didReceiveRecordedSessionError(statusCode: String?) {
         
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
         
     }
     

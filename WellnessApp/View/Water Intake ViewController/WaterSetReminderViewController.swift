@@ -1,6 +1,6 @@
 //
 //  WaterSetReminderViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 30/11/21.
 //
@@ -118,7 +118,7 @@ class WaterSetReminderViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -147,7 +147,7 @@ class WaterSetReminderViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -241,7 +241,7 @@ extension WaterSetReminderViewController: WaterReminderDelegate {
             }
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
@@ -252,7 +252,7 @@ extension WaterSetReminderViewController: WaterReminderDelegate {
 //            dump(waterReminderSetDataResponse)
             
             if let msg = waterReminderSetDataResponse?.message {                
-                openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                         message: msg,
                                         alertStyle: .alert,
                                         actionTitles: ["OK"],
@@ -264,12 +264,12 @@ extension WaterSetReminderViewController: WaterReminderDelegate {
                                         ])
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveWaterReminderDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

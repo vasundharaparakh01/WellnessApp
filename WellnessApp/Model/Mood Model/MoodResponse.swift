@@ -1,6 +1,6 @@
 //
 //  MoodResponse.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 2022-01-31.
 //

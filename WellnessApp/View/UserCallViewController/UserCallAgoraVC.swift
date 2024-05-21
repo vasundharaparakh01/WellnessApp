@@ -1,6 +1,6 @@
 //
 //  UserCallAgoraVC.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 05/01/23.
 //
@@ -281,7 +281,7 @@ class UserCallAgoraVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                     if string.contains(userId)
                     {
                     
-                    let refreshAlert = UIAlertController(title: "Luvo", message: "Coach has removed you from call", preferredStyle: UIAlertController.Style.alert)
+                    let refreshAlert = UIAlertController(title: "app_name", message: "Coach has removed you from call", preferredStyle: UIAlertController.Style.alert)
 
                     refreshAlert.addAction(UIAlertAction(title: "ok", style: .default, handler: { (action: UIAlertAction!) in
                           print("Handle Ok logic here")
@@ -304,7 +304,7 @@ class UserCallAgoraVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                 else if string.contains("CallEnd, du ")
                 {
                     
-                    let refreshAlert = UIAlertController(title: "Luvo", message: "Coach has ended the call", preferredStyle: UIAlertController.Style.alert)
+                    let refreshAlert = UIAlertController(title: "app_name", message: "Coach has ended the call", preferredStyle: UIAlertController.Style.alert)
 
                     refreshAlert.addAction(UIAlertAction(title: "ok", style: .default, handler: { (action: UIAlertAction!) in
                           print("Handle Ok logic here")
@@ -669,7 +669,7 @@ class UserCallAgoraVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {

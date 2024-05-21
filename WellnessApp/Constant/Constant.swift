@@ -1,6 +1,6 @@
 //
 //  Constant.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 03/09/21.
 //
@@ -83,7 +83,7 @@ struct ConstantBreathExerciseID {       //  "Static breathing Exercise id
 
 
 struct ConstantAlertTitle {
-    static let LuvoAlertTitle           = "Luvo"
+    static let app_nameAlertTitle           = "app_name"
     static let ErrorAlertTitle          = "Error"
     static let OkAlertTitle             = "Ok"
     static let CancelAlertTitle         = "Cancel"
@@ -133,7 +133,7 @@ struct ConstantUploadImage {
 }
 
 struct ConstantUploadAudio {
-    static let fileName         = "luvo.m4a"
+    static let fileName         = "app_name.m4a"
     static let fileType         = "m4a"
     static let parameterName    = "music"
 }
@@ -309,7 +309,7 @@ struct ConstantNavgigationBarTitleText {
 
 //struct ConstantNavigationBarImageName {
 //    static let imageLeftArrow       = "left-arrow"
-//    static let imageLuvo            = ""
+//    static let imageapp_name            = ""
 //    static let imageMenu            = "menu"
 //    static let imageNotification    = "bell"
 //}

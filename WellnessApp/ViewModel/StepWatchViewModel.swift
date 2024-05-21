@@ -1,6 +1,6 @@
 //
 //  StepWatchViewModel.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 28/07/22.
 //

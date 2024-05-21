@@ -1,6 +1,6 @@
 //
 //  RecordedSessionResponse.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 13/12/22.
 //

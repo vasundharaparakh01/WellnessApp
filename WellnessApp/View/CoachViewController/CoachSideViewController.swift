@@ -1,6 +1,6 @@
 //
 //  CoachSideViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 05/07/22.
 //

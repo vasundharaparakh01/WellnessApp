@@ -140,6 +140,7 @@
 		00FF7D0C295D75A30051CC9F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3A6E7B274217E000B2EB81 /* HealthKit.framework */; };
 		00FF7D0F295D75A50051CC9F /* HealthKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A522B2287FEEB0003526E1 /* HealthKitUI.framework */; };
 		00FF7D11295D75A70051CC9F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF14524B78139DEE129AFDB /* Pods.framework */; };
+		0B7B43842BFC96A1009A07BF /* .app in Resources */ = {isa = PBXBuildFile; fileRef = 3E40741526DF10E100176EC5 /* .app */; };
 		2D01086728615924005C97BE /* VideoPlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D01086628615924005C97BE /* VideoPlay.storyboard */; };
 		2D01086E28615B33005C97BE /* VideoPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01086D28615B33005C97BE /* VideoPlay.swift */; };
 		2D1B420E29D2271D00FA0D81 /* StripeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B420D29D2271D00FA0D81 /* StripeVC.swift */; };
@@ -184,7 +185,6 @@
 		3E0ADDD22754FC4300878869 /* WaterCupSizePostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0ADDD12754FC4200878869 /* WaterCupSizePostRequest.swift */; };
 		3E0ADDD42754FC5E00878869 /* WaterCupSizePostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0ADDD32754FC5E00878869 /* WaterCupSizePostResponse.swift */; };
 		3E0ADDD62754FFFF00878869 /* WaterCupSizeValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0ADDD52754FFFE00878869 /* WaterCupSizeValidation.swift */; };
-		3E0EAA8527F5E44B00D217C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E0EAA8427F5E44B00D217C5 /* GoogleService-Info.plist */; };
 		3E105ACE2773100800B4E831 /* HeartRateMeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E105ACD2773100500B4E831 /* HeartRateMeasureViewController.swift */; };
 		3E105AD0277310BA00B4E831 /* HeartRate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E105ACF277310B900B4E831 /* HeartRate.storyboard */; };
 		3E1146442796E1C200E272CA /* LogoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1146432796E1C200E272CA /* LogoutRequest.swift */; };
@@ -642,8 +642,8 @@
 		2DBFC7AF29E13A7200A07D8B /* DeleteUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserResponse.swift; sourceTree = "<group>"; };
 		3E01ED06279979E9004D6748 /* FavAudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavAudioTableViewCell.swift; sourceTree = "<group>"; };
 		3E01ED07279979E9004D6748 /* FavAudioTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavAudioTableViewCell.xib; sourceTree = "<group>"; };
-		3E01ED0B27997A10004D6748 /* FavVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavVideoTableViewCell.swift; path = "Luvo/View/Favourites ViewController/FavouriteAudioTableCell/FavVideoTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
-		3E01ED0C27997A10004D6748 /* FavVideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FavVideoTableViewCell.xib; path = "Luvo/View/Favourites ViewController/FavouriteAudioTableCell/FavVideoTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		3E01ED0B27997A10004D6748 /* FavVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavVideoTableViewCell.swift; path = "app_name/View/Favourites ViewController/FavouriteAudioTableCell/FavVideoTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		3E01ED0C27997A10004D6748 /* FavVideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FavVideoTableViewCell.xib; path = "app_name/View/Favourites ViewController/FavouriteAudioTableCell/FavVideoTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		3E0761FD2706DAEC00A6B5AF /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		3E0762022706EAEC00A6B5AF /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
 		3E0766052776D0B30032ADBA /* BlogCommentSendRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCommentSendRequest.swift; sourceTree = "<group>"; };
@@ -660,7 +660,6 @@
 		3E0ADDD12754FC4200878869 /* WaterCupSizePostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCupSizePostRequest.swift; sourceTree = "<group>"; };
 		3E0ADDD32754FC5E00878869 /* WaterCupSizePostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCupSizePostResponse.swift; sourceTree = "<group>"; };
 		3E0ADDD52754FFFE00878869 /* WaterCupSizeValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCupSizeValidation.swift; sourceTree = "<group>"; };
-		3E0EAA8427F5E44B00D217C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3E105ACD2773100500B4E831 /* HeartRateMeasureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartRateMeasureViewController.swift; sourceTree = "<group>"; };
 		3E105ACF277310B900B4E831 /* HeartRate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HeartRate.storyboard; sourceTree = "<group>"; };
 		3E1146432796E1C200E272CA /* LogoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequest.swift; sourceTree = "<group>"; };
@@ -904,7 +903,7 @@
 		3EDF9FB92776135B006E46D4 /* BlogCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCommentsViewController.swift; sourceTree = "<group>"; };
 		3EDF9FBB27761A98006E46D4 /* BlogCommentGetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCommentGetResponse.swift; sourceTree = "<group>"; };
 		3EE06A3326EA1E8F00195512 /* QuestionOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOneViewController.swift; sourceTree = "<group>"; };
-		3EE3871A27985B8500EE61CF /* TimezoneRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimezoneRequest.swift; path = Luvo/Validation/TimezoneRequest.swift; sourceTree = SOURCE_ROOT; };
+		3EE3871A27985B8500EE61CF /* TimezoneRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimezoneRequest.swift; path = app_name/Validation/TimezoneRequest.swift; sourceTree = SOURCE_ROOT; };
 		3EE3871C27985C5000EE61CF /* TimezoneResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneResponse.swift; sourceTree = "<group>"; };
 		3EE60B00275605AA00A20164 /* WaterSetReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterSetReminderViewController.swift; sourceTree = "<group>"; };
 		3EE60B022756212200A20164 /* WaterReminderGetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderGetResponse.swift; sourceTree = "<group>"; };
@@ -980,12 +979,12 @@
 		3EFFFE32271937E80003C066 /* GratitudeCategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeCategoryResponse.swift; sourceTree = "<group>"; };
 		3EFFFE342719504A0003C066 /* GratitudeAddRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeAddRequest.swift; sourceTree = "<group>"; };
 		3EFFFE36271950ED0003C066 /* GratitudeAddResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeAddResponse.swift; sourceTree = "<group>"; };
-		805CA57DCC03FCFEC1DED1C6 /* Pods-.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-.release.xcconfig"; path = "Target Support Files/Pods-Luvo/Pods-.release.xcconfig"; sourceTree = "<group>"; };
+		805CA57DCC03FCFEC1DED1C6 /* Pods-.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-.release.xcconfig"; path = "Target Support Files/Pods-app_name/Pods-.release.xcconfig"; sourceTree = "<group>"; };
 		9CF14524B78139DEE129AFDB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9762D22767574200487EBF /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		BD9762D527675FE300487EBF /* SearchMeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMeditationViewController.swift; sourceTree = "<group>"; };
 		BD9762D72767844E00487EBF /* SearchAudioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAudioViewModel.swift; sourceTree = "<group>"; };
-		C685D18E4A9A2F84AC11F7CC /* Pods-debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debug.xcconfig"; path = "Target Support Files/Pods-Luvo/Pods-debug.xcconfig"; sourceTree = "<group>"; };
+		C685D18E4A9A2F84AC11F7CC /* Pods-debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debug.xcconfig"; path = "Target Support Files/Pods-app_name/Pods-debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1577,7 +1576,6 @@
 		3E40741726DF10E100176EC5 /* Wellness */ = {
 			isa = PBXGroup;
 			children = (
-				3E0EAA8427F5E44B00D217C5 /* GoogleService-Info.plist */,
 				3E5E813E26EF73EB00E37432 /* HTTPUtility */,
 				3E5E813526EF3BAA00E37432 /* Common */,
 				3EE9538326E729D900DACB70 /* InstagramSDK */,
@@ -1600,7 +1598,8 @@
 				3E40742926DF10E700176EC5 /* Info.plist */,
 				3E48F3B926E63EF200732DC2 /* Readme.rtf */,
 			);
-			path = Wellness;
+			name = Wellness;
+			path = WellnessApp;
 			sourceTree = "<group>";
 		};
 		3E40743026DF125200176EC5 /* Storyboards */ = {
@@ -2568,9 +2567,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3E40741426DF10E100176EC5 /* Luvo */ = {
+		3E40741426DF10E100176EC5 /* WellnessApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E40742C26DF10E700176EC5 /* Build configuration list for PBXNativeTarget "Luvo" */;
+			buildConfigurationList = 3E40742C26DF10E700176EC5 /* Build configuration list for PBXNativeTarget "WellnessApp" */;
 			buildPhases = (
 				2A8AD6DED63DA8901438AC9E /* [CP] Check Pods Manifest.lock */,
 				3E40741126DF10E100176EC5 /* Sources */,
@@ -2583,7 +2582,7 @@
 			);
 			dependencies = (
 			);
-			name = Luvo;
+			name = WellnessApp;
 			packageProductDependencies = (
 				2DC113DE29E1C31900FCC871 /* Stripe */,
 				2DC113E029E1C31900FCC871 /* StripeApplePay */,
@@ -2608,7 +2607,7 @@
 				0063FA342A2F034700F8725E /* VideoCodecEnc */,
 				0063FA362A2F034700F8725E /* VirtualBackground */,
 			);
-			productName = Luvo;
+			productName = app_name;
 			productReference = 3E40741526DF10E100176EC5 /* .app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -2643,7 +2642,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3E40741426DF10E100176EC5 /* Luvo */,
+				3E40741426DF10E100176EC5 /* WellnessApp */,
 			);
 		};
 /* End PBXProject section */
@@ -2657,12 +2656,12 @@
 				3EF10D52270DB420002851E9 /* WorkSans-MediumItalic.ttf in Resources */,
 				004F84A6295C2D44000B13CA /* UserChatWithAdminTableViewCell.xib in Resources */,
 				004F84A2295C2CC8000B13CA /* UserChatWithAdminIMageTableViewCell.xib in Resources */,
-				3E0EAA8527F5E44B00D217C5 /* GoogleService-Info.plist in Resources */,
 				004F848F295C206F000B13CA /* ChatReceiveTableViewCell.xib in Resources */,
 				00A052242993AADF0026E913 /* Payment.storyboard in Resources */,
 				3EF10D4E270DB420002851E9 /* WorkSans-ThinItalic.ttf in Resources */,
 				3E08C914271FDD4500988B79 /* BreathingExercise.storyboard in Resources */,
 				3E9DAE0226E0DF24008D78F8 /* Nunito-SemiBoldItalic.ttf in Resources */,
+				0B7B43842BFC96A1009A07BF /* .app in Resources */,
 				3EF10D54270DB420002851E9 /* WorkSans-ExtraLightItalic.ttf in Resources */,
 				3E5922EA2786C8D40051803F /* Badges.storyboard in Resources */,
 				3E30656B2795A75A0043383E /* ChangePassword.storyboard in Resources */,
@@ -2755,15 +2754,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Luvo/Pods-Luvo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-app_name/Pods-app_name-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Luvo/Pods-Luvo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-app_name/Pods-app_name-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Luvo/Pods-Luvo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-app_name/Pods-app_name-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2A8AD6DED63DA8901438AC9E /* [CP] Check Pods Manifest.lock */ = {
@@ -2781,7 +2780,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Luvo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-app_name-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3351,7 +3350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9U4NNG86X9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -3362,7 +3361,7 @@
 				);
 				MARKETING_VERSION = 2.5;
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wellness.WellnessApp;
 				PRODUCT_MODULE_NAME = "";
 				PRODUCT_NAME = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3379,11 +3378,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9U4NNG86X9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -3394,10 +3393,10 @@
 				);
 				MARKETING_VERSION = 2.5;
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wellness.WellnessApp;
 				PRODUCT_MODULE_NAME = "";
 				PRODUCT_NAME = "";
-				PROVISIONING_PROFILE_SPECIFIER = "Nilanjan Ghosh_dev";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -3415,7 +3414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E40742C26DF10E700176EC5 /* Build configuration list for PBXNativeTarget "Luvo" */ = {
+		3E40742C26DF10E700176EC5 /* Build configuration list for PBXNativeTarget "WellnessApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E40742D26DF10E700176EC5 /* Debug */,

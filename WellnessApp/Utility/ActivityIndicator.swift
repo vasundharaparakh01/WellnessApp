@@ -1,6 +1,6 @@
 //
 //  ActivityIndicator.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 21/09/21.
 //

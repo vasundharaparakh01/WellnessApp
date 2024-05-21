@@ -1,6 +1,6 @@
 //
 //  LiveSessionListViewCell.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 07/12/22.
 //

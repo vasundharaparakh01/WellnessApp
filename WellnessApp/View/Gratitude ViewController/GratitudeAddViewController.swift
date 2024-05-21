@@ -1,6 +1,6 @@
 //
 //  GratitudeAddViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 11/10/21.
 //
@@ -283,7 +283,7 @@ class GratitudeAddViewController: UIViewController, GratitudeAddDelegate, Gratit
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -303,7 +303,7 @@ class GratitudeAddViewController: UIViewController, GratitudeAddDelegate, Gratit
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -325,7 +325,7 @@ class GratitudeAddViewController: UIViewController, GratitudeAddDelegate, Gratit
                     gratitudeViewModel.saveGratitudeCategory(addGratitudeRequest: request, token: token)
                 } else {
                     self.view.stopActivityIndicator()
-                    showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantAlertMessage.EnterGratitude)
+                    showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantAlertMessage.EnterGratitude)
                 }
             }
         }
@@ -381,7 +381,7 @@ extension GratitudeAddViewController: UITableViewDelegate, UITableViewDataSource
             if gratitudeCategoryName == "Other" {
                 stringOther = gratitudeCategoryName
                 txtViewOther.isUserInteractionEnabled = true
-                showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantAlertMessage.EnterGratitude)
+                showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantAlertMessage.EnterGratitude)
             } else {
                 stringOther = nil
                 txtViewOther.isUserInteractionEnabled = false
@@ -418,12 +418,12 @@ extension GratitudeAddViewController {
                 }
 //                else {
 //                    if let message = gratitudeGetDataResponse?.message {
-//                        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+//                        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
 //                    }
 //                }
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
@@ -438,17 +438,17 @@ extension GratitudeAddViewController {
                 popToRootVC(msg: ConstantStatusAPI.success)
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: gratitudeAddResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: gratitudeAddResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveGratitudeDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     fileprivate func popToRootVC(msg: String) {
-        openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+        openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                 message: msg,
                                 alertStyle: .alert, actionTitles: ["OK"],
                                 actionStyles: [.default],

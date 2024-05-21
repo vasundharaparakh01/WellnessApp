@@ -1,6 +1,6 @@
 //
 //  MeditationAudioListViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 29/10/21.
 //
@@ -261,7 +261,7 @@ class MeditationAudioListViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -387,11 +387,11 @@ extension MeditationAudioListViewController: UITableViewDelegate, UITableViewDat
                             if DC == true {
                                 PushToVc(indexPath: indexPath)
                             } else {
-                                showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "You can listen to this audio tomorrow")
+                                showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "You can listen to this audio tomorrow")
                             }
                         }
                     } else {
-                        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Listen to the previous audio for at least 5 minutes to unlock")
+                        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Listen to the previous audio for at least 5 minutes to unlock")
                     }
                 }
             } else {
@@ -433,7 +433,7 @@ extension MeditationAudioListViewController: UITableViewDelegate, UITableViewDat
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -454,7 +454,7 @@ extension MeditationAudioListViewController: UITableViewDelegate, UITableViewDat
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -492,7 +492,7 @@ extension MeditationAudioListViewController: MeditationAudioViewModelDelegate {
             if let arrMusic = meditationAudioData?.musics {
                 if arrMusic.count == 0 {
                     if let message = meditationAudioDataResponse?.message {
-                        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+                        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
                     }
                 } else {
                     arrayAudioList = arrMusic
@@ -529,13 +529,13 @@ extension MeditationAudioListViewController: MeditationAudioViewModelDelegate {
                 }
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveMeditationAudioDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -547,18 +547,18 @@ extension MeditationAudioListViewController: MeditationAudioUnlockViewModelDeleg
 //            dump(audioUnlockDataResponse)
             
             guard let message = audioUnlockDataResponse?.message else { return }
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
             
             getMeditationAudioList()
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveAudioUnlockDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -570,17 +570,17 @@ extension MeditationAudioListViewController: FavouritesViewModelDelegate {
 //            dump(favouriteDataResponse)
             
             guard let message = favouriteDataResponse?.message else { return }
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
             
             getMeditationAudioList()
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveFavouriteDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

@@ -1,6 +1,6 @@
 //
 //  SleepRecordsAndroidViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 22/02/22.
 //
@@ -482,7 +482,7 @@ class SleepRecordsAndroidViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -647,7 +647,7 @@ class SleepRecordsAndroidViewController: UIViewController {
             }
         }
         
-        setChartData(label: "Luvo")
+        setChartData(label: "app_name")
 //        chartView.setNeedsDisplay()
     }
     
@@ -766,7 +766,7 @@ extension SleepRecordsAndroidViewController {
         //"http://beas.in:5000/music-1647310363635.mp3"
         //"https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
         //"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
-        //"https://luvo.s3.us-east-2.amazonaws.com/uploads/musics/music-1638000779365.mp3"
+        //"https://app_name.s3.us-east-2.amazonaws.com/uploads/musics/music-1638000779365.mp3"
         //let finalPath = "http%3A%2F%2Fbeas.in%3A5000%2Fmusic-1647320218414.mp3"
         
         let finalPath = Common.WebserviceAPI.baseURL+withMediaPath
@@ -890,21 +890,21 @@ extension SleepRecordsAndroidViewController: SleepStatDelegate {
                     self.refreshGraph()
 //                    self.clearGraph()
 //                    self.clearData()
-//                    showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+//                    showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
                 }
             } else {
                 self.clearGraph()
                 self.clearData()
-                showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "No data found. Your (if submitted) sleep data analysis is under process and the result will be available within 5 minutes")
+                showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "No data found. Your (if submitted) sleep data analysis is under process and the result will be available within 5 minutes")
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveSleepStatDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 

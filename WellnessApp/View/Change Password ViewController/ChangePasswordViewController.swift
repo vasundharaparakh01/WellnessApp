@@ -1,6 +1,6 @@
 //
 //  ChangePasswordViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 2022-01-17.
 //
@@ -108,22 +108,22 @@ class ChangePasswordViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
             guard let oldPass = txtOldPassword.text else {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.oldPassEmpty)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.oldPassEmpty)
                 return
             }
             
             guard let newPass = txtNewPassword.text else {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.emptyNewPassword)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.emptyNewPassword)
                 return
             }
             
             guard let confirmPass = txtConfirmPassword.text else {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.emptyConfirmPassword)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.emptyConfirmPassword)
                 return
             }
             
@@ -163,16 +163,16 @@ extension ChangePasswordViewController: ChangePasswordViewModelDelegate {
         if(changePasswordResponse?.status != nil && changePasswordResponse?.status?.lowercased() == ConstantStatusAPI.success) {
 //            dump(waterStatDataResponse)
             if let msg = changePasswordResponse?.message?.firstCapitalized {
-                showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: msg)
+                showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: msg)
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: changePasswordResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: changePasswordResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveChangePasswordError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
         
 }

@@ -1,6 +1,6 @@
 //
 //  CoachRecordedListVC.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 27/12/22.
 //
@@ -295,13 +295,13 @@ extension CoachRecordedListVC:CoachRecordedSessionViewModelDelegate
             tblVwListCoach.reloadData()
         }
         else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveCoachRecordedSessionError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
         
     }
     

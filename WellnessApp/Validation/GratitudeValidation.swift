@@ -1,6 +1,6 @@
 //
 //  GratitudeValidation.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 16/10/21.
 //

@@ -1,6 +1,6 @@
 //
 //  UpcomingTableViewCell.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 10/02/23.
 //

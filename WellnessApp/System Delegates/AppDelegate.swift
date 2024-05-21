@@ -1,6 +1,6 @@
 
 //  AppDelegate.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 01/09/21.
 //
@@ -64,7 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         //--------------------------------------
         
 //        //Background Task
-//        BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.luvo.fetchSteps",
+//        BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.app_name.fetchSteps",
 //                                        using: nil) { (task) in
 //            self.handleAppRefreshTask(task: task as! BGAppRefreshTask)
 //        }
@@ -179,7 +179,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "Luvo")
+        let container = NSPersistentContainer(name: "app_name")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -1511,7 +1511,7 @@ public extension UIApplication {
 //    }
 //
 //    func scheduleBackgroundStepUpdate() {
-//        let bgTask = BGAppRefreshTaskRequest(identifier: "com.luvo.fetchSteps")
+//        let bgTask = BGAppRefreshTaskRequest(identifier: "com.app_name.fetchSteps")
 //        bgTask.earliestBeginDate = Date(timeIntervalSinceNow: 60) // App Refresh after 60 minute.
 //        do {
 //          try BGTaskScheduler.shared.submit(bgTask)
@@ -1558,7 +1558,7 @@ public extension UIApplication {
 //                let connectionStatus = ConnectionManager.shared.hasConnectivity()
 //                if (connectionStatus == false) {
 ////                    DispatchQueue.main.async {
-////                        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+////                        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
 ////                        return
 ////                    }
 //                } else {

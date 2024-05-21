@@ -1,6 +1,6 @@
 //
 //  ExerciseStatsViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 12/11/21.
 //
@@ -388,7 +388,7 @@ class ExerciseStatsViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -960,23 +960,23 @@ extension ExerciseStatsViewController: ExerciseStatDelegate {
                 } else {
 //                    clearData()
                     clearGraph()
-                    showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: exerciseStatDataResponse?.message ?? ConstantStatusAPI.failed)
+                    showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: exerciseStatDataResponse?.message ?? ConstantStatusAPI.failed)
                 }
             } else {
 //                clearData()
                 clearGraph()
-                showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: exerciseStatDataResponse?.message ?? ConstantStatusAPI.failed)
+                showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: exerciseStatDataResponse?.message ?? ConstantStatusAPI.failed)
             }
             //Refresh general data
             refreshData()
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: exerciseStatDataResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: exerciseStatDataResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveExerciseStatDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 

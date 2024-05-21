@@ -1,6 +1,6 @@
 //
 //  ProfileVCExt.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 06/10/21.
 //
@@ -12,7 +12,7 @@ extension ProfileViewController: ProfileViewModelDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -66,7 +66,7 @@ extension ProfileViewController: ProfileViewModelDelegate {
             setupUserData()
                         
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
@@ -88,12 +88,12 @@ extension ProfileViewController: ProfileViewModelDelegate {
             txtLastName.textColor = .darkGray
             txtPhone.textColor = .darkGray
             
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantAlertMessage.ProfileUpdateSuccessful)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantAlertMessage.ProfileUpdateSuccessful)
             
             getProfileData()
                         
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: profileUpdateResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: profileUpdateResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
@@ -103,16 +103,16 @@ extension ProfileViewController: ProfileViewModelDelegate {
         if(profilePictureUploadResponse?.status != nil && profilePictureUploadResponse?.status?.lowercased() == ConstantStatusAPI.success) {
 //            dump(profilePictureUploadResponse)
                         
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantAlertMessage.ImageUploadSuccessful)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantAlertMessage.ImageUploadSuccessful)
             getProfileData()
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveProfileDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

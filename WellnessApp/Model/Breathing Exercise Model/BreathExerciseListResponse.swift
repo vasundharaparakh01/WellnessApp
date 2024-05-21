@@ -1,6 +1,6 @@
 //
 //  BreathExerciseListResponse.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 20/10/21.
 //

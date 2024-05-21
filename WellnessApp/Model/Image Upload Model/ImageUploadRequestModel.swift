@@ -1,6 +1,6 @@
 //
 //  ImageUploadRequestModel.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 07/10/21.
 //

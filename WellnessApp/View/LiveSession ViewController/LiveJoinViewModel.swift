@@ -1,6 +1,6 @@
 //
 //  LiveJoinViewModel.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 10/12/22.
 //

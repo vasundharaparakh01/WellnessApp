@@ -27,7 +27,7 @@
         <!--Coach Side View Controller-->
         <scene sceneID="IWg-lA-deI">
             <objects>
-                <viewController storyboardIdentifier="CoachSideViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QRq-Gd-8wh" customClass="CoachSideViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CoachSideViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QRq-Gd-8wh" customClass="CoachSideViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dF7-gg-8ET">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +62,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SideMenuDefaultCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SideMenuDefaultCell" rowHeight="44" id="hAe-pH-TA1" customClass="SideMenuDefaultCell" customModule="Luvo" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SideMenuDefaultCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SideMenuDefaultCell" rowHeight="44" id="hAe-pH-TA1" customClass="SideMenuDefaultCell" customModule="app_name" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hAe-pH-TA1" id="k6f-fD-FXL">
@@ -117,7 +117,7 @@
                                             <action selector="btnClose:" destination="QRq-Gd-8wh" eventType="touchUpInside" id="65g-dU-0FN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s81-f6-XiS" customClass="UIBUtton_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s81-f6-XiS" customClass="UIBUtton_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="117" y="225" width="180" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="MV4-Qy-c3P"/>
@@ -188,7 +188,7 @@
         <!--Coach View AgoraVC-->
         <scene sceneID="dlf-Mu-ztp">
             <objects>
-                <viewController storyboardIdentifier="CoachViewAgoraVC" id="uNf-fd-qvS" customClass="CoachViewAgoraVC" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CoachViewAgoraVC" id="uNf-fd-qvS" customClass="CoachViewAgoraVC" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zVA-2w-uGA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -297,7 +297,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="calCellUser" id="ZCs-43-zmA" customClass="AgoraCoachImageView" customModule="Luvo" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="calCellUser" id="ZCs-43-zmA" customClass="AgoraCoachImageView" customModule="app_name" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="-1" width="58" height="62"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aO8-XB-3sX">
@@ -436,7 +436,7 @@
                                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatViewCell" rowHeight="40" id="dwZ-DY-2AM" customClass="ChatViewCell" customModule="Luvo" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatViewCell" rowHeight="40" id="dwZ-DY-2AM" customClass="ChatViewCell" customModule="app_name" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44.5" width="330" height="40"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dwZ-DY-2AM" id="xqr-z7-cTU">
@@ -715,7 +715,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="calCellUser" id="CWH-am-KID" customClass="AgoraCoachImageView" customModule="Luvo" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="calCellUser" id="CWH-am-KID" customClass="AgoraCoachImageView" customModule="app_name" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="58" height="62"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="O9n-BA-hnR">
@@ -772,7 +772,7 @@
                                     <constraint firstAttribute="height" constant="244" id="kcT-Q2-mNU"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatViewCell" rowHeight="81" id="HRe-m4-fx5" customClass="ChatViewCell" customModule="Luvo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatViewCell" rowHeight="81" id="HRe-m4-fx5" customClass="ChatViewCell" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="236" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HRe-m4-fx5" id="e0r-US-5jD">

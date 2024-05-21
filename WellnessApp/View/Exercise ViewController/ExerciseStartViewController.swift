@@ -1,6 +1,6 @@
 //
 //  ExerciseStartViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 10/11/21.
 //
@@ -232,7 +232,7 @@ class ExerciseStartViewController: UIViewController {
     @IBAction func btnStop(_ sender: Any) {
 //        navigationController?.popViewController(animated: true)
         
-        openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle, message: "Do you want to finish the exercise?", alertStyle: .alert, actionTitles: ["OK", "Cancel"], actionStyles: [.default, .default], actions: [
+        openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle, message: "Do you want to finish the exercise?", alertStyle: .alert, actionTitles: ["OK", "Cancel"], actionStyles: [.default, .default], actions: [
             { _ in
                 print("OK")
                 self.locationManager?.stopUpdatingLocation()
@@ -300,7 +300,7 @@ extension ExerciseStartViewController: CLLocationManagerDelegate {
             timer.invalidate()
             self.countdownTimer = nil
         }
-        openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle, message: "Hurray! Exercise time is completed", alertStyle: .alert, actionTitles: ["OK"], actionStyles: [.default], actions: [
+        openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle, message: "Hurray! Exercise time is completed", alertStyle: .alert, actionTitles: ["OK"], actionStyles: [.default], actions: [
             { _ in
                 print("OK")
                 self.stepFinishUpdate()
@@ -312,7 +312,7 @@ extension ExerciseStartViewController: CLLocationManagerDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -355,7 +355,7 @@ extension ExerciseStartViewController: CLLocationManagerDelegate {
                     
                 }
             } else {
-                openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle, message: "Oops! No exercise done", alertStyle: .alert, actionTitles: ["OK"], actionStyles: [.default], actions: [
+                openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle, message: "Oops! No exercise done", alertStyle: .alert, actionTitles: ["OK"], actionStyles: [.default], actions: [
                     { _ in
                         print("OK")
                         self.navigationController?.popViewController(animated: true)
@@ -1042,7 +1042,7 @@ extension ExerciseStartViewController: StepWatchViewModelDelegate
             ///
         
 
-            openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+            openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                     message: "Your step data successfully updated.",
                                     alertStyle: .alert,
                                     actionTitles: ["OK"],
@@ -1061,7 +1061,7 @@ extension ExerciseStartViewController: StepWatchViewModelDelegate
     func didReceiveStepWatchError(statusCode: String?) {
         
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
         
     }
     
@@ -1080,7 +1080,7 @@ extension ExerciseStartViewController: StepFinishDelegate {
 //            //Reset Global Steps Counter for Appdelegate
 //            globalStepCounter = 0
             
-            openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+            openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                     message: stepFinishDataResponse?.message ?? "Success",
                                     alertStyle: .alert,
                                     actionTitles: ["OK"],
@@ -1094,13 +1094,13 @@ extension ExerciseStartViewController: StepFinishDelegate {
                                         }
                                     ])
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: stepFinishDataResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: stepFinishDataResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveStepFinishDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
         
 //        //Reset Global Steps Counter for Appdelegate
 //        globalStepCounter = 0

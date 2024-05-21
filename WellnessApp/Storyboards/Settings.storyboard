@@ -18,7 +18,7 @@
         <!--Settings View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="SettingsViewController" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="SettingsViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="SettingsViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -476,7 +476,7 @@
                                             <action selector="btnNotification:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kBR-sp-0ys"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOZ-5n-2F2" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOZ-5n-2F2" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="390" y="52" width="16" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFq-n8-pia">

@@ -65,7 +65,7 @@
                                             <action selector="btnNotification:" destination="9md-4D-puk" eventType="touchUpInside" id="HJD-Y1-h9z"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOd-iv-Qyc" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOd-iv-Qyc" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="351" y="52" width="16" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5to-cu-7FO">
@@ -140,17 +140,17 @@
                                 <rect key="frame" x="0.0" y="180" width="375" height="596"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserCallTableViewCell" rowHeight="167" id="yMX-V7-tHC" customClass="UserCallTableViewCell" customModule="Luvo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserCallTableViewCell" rowHeight="167" id="yMX-V7-tHC" customClass="UserCallTableViewCell" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="167"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yMX-V7-tHC" id="T5q-lX-uQa">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVi-8p-Iqp" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVi-8p-Iqp" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="5" width="343" height="147"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hpK-vB-84O" customClass="UIImageView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hpK-vB-84O" customClass="UIImageView_Designable" customModule="app_name" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="-6" width="343" height="137"/>
                                                             <color key="tintColor" systemColor="tintColor"/>
                                                             <constraints>
@@ -168,7 +168,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="join-now-button" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-CM-8pC" customClass="UIImageView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="join-now-button" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-CM-8pC" customClass="UIImageView_Designable" customModule="app_name" customModuleProvider="target">
                                                             <rect key="frame" x="252" y="91.666666666666671" width="80" height="33"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="9T2-JX-Ghc"/>
@@ -190,7 +190,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G2r-OP-ZQm" customClass="UIImageView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G2r-OP-ZQm" customClass="UIImageView_Designable" customModule="app_name" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="19" width="100" height="100"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <userDefinedRuntimeAttributes>
@@ -258,7 +258,7 @@
                                                                 <constraint firstAttribute="width" constant="13" id="GCQ-fb-nOm"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSa-ya-W1h" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSa-ya-W1h" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="137"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listen to the previous audio for atleast 5 minutes to unlock" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="IbK-KJ-vFv">
@@ -267,7 +267,7 @@
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="0N3-gz-hco" customClass="UIImageView_Designable" customModule="Luvo" customModuleProvider="target">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="0N3-gz-hco" customClass="UIImageView_Designable" customModule="app_name" customModuleProvider="target">
                                                                     <rect key="frame" x="15" y="19" width="100" height="100"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="100" id="P6d-Mg-9a0"/>
@@ -420,7 +420,7 @@
         <!--User Call AgoraVC-->
         <scene sceneID="Hg7-l2-vvQ">
             <objects>
-                <viewController storyboardIdentifier="UserCallAgoraVC" hidesBottomBarWhenPushed="YES" id="CJb-7b-jTz" customClass="UserCallAgoraVC" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserCallAgoraVC" hidesBottomBarWhenPushed="YES" id="CJb-7b-jTz" customClass="UserCallAgoraVC" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vjy-ee-QOP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -519,7 +519,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="calCellUser" id="usR-7z-uGd" customClass="AgoraCoachImageView" customModule="Luvo" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="calCellUser" id="usR-7z-uGd" customClass="AgoraCoachImageView" customModule="app_name" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="58" height="60"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="A0i-g2-4zF">
@@ -636,7 +636,7 @@
                                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatViewCell" rowHeight="40" id="cQz-eB-3XD" customClass="ChatViewCell" customModule="Luvo" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatViewCell" rowHeight="40" id="cQz-eB-3XD" customClass="ChatViewCell" customModule="app_name" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44.666666030883789" width="291" height="40"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cQz-eB-3XD" id="6eO-WN-JZU">
@@ -809,7 +809,7 @@
         <!--Coach CallVC-->
         <scene sceneID="e88-yB-5j4">
             <objects>
-                <viewController storyboardIdentifier="CoachCallVC" hidesBottomBarWhenPushed="YES" id="6bT-Cd-JkS" customClass="CoachCallVC" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CoachCallVC" hidesBottomBarWhenPushed="YES" id="6bT-Cd-JkS" customClass="CoachCallVC" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vzt-j1-pjX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -993,7 +993,7 @@
                                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CaoachChatViewCell" rowHeight="40" id="7SL-r8-3hN" customClass="CaoachChatViewCell" customModule="Luvo" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CaoachChatViewCell" rowHeight="40" id="7SL-r8-3hN" customClass="CaoachChatViewCell" customModule="app_name" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44.666666030883789" width="86" height="40"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7SL-r8-3hN" id="wzF-pg-orh">
@@ -1107,7 +1107,7 @@
                                                     <constraint firstAttribute="width" constant="240" id="iWO-W4-0qv"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HandRaiseTableViewCell" rowHeight="46" id="YGp-fT-194" customClass="HandRaiseTableViewCell" customModule="Luvo" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HandRaiseTableViewCell" rowHeight="46" id="YGp-fT-194" customClass="HandRaiseTableViewCell" customModule="app_name" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44.666666030883789" width="240" height="46"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YGp-fT-194" id="czd-wf-pjM">
@@ -1204,7 +1204,7 @@
                                                     <constraint firstAttribute="height" constant="754" id="QdZ-Ym-RNm"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableList" rowHeight="50" id="dpH-QI-tWy" customClass="UserTableList" customModule="Luvo" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableList" rowHeight="50" id="dpH-QI-tWy" customClass="UserTableList" customModule="app_name" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44.666666030883789" width="116" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dpH-QI-tWy" id="uZx-SS-6sH">
@@ -1356,7 +1356,7 @@
         <!--User Call View Controller-->
         <scene sceneID="yWH-Zw-OaH">
             <objects>
-                <viewController storyboardIdentifier="UserCallViewController" id="Uba-GM-pYo" customClass="UserCallViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserCallViewController" id="Uba-GM-pYo" customClass="UserCallViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NQS-oc-tci">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1398,7 +1398,7 @@
                                             <action selector="btnNotification:" destination="Uba-GM-pYo" eventType="touchUpInside" id="h1h-QQ-TP5"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abA-fy-hSe" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abA-fy-hSe" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="351" y="52" width="16" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zj-Yy-ozM">
@@ -1473,7 +1473,7 @@
                                 <rect key="frame" x="0.0" y="190" width="375" height="588"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserCallTableViewCell" rowHeight="79" id="OBO-5I-BR3" customClass="UserCallTableViewCell" customModule="Luvo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserCallTableViewCell" rowHeight="79" id="OBO-5I-BR3" customClass="UserCallTableViewCell" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OBO-5I-BR3" id="Yab-71-dKt">

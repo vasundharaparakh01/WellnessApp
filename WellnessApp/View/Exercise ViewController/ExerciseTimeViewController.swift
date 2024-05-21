@@ -1,6 +1,6 @@
 //
 //  ExerciseTimeViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 09/11/21.
 //
@@ -203,11 +203,11 @@ class ExerciseTimeViewController: UIViewController {
             if data.targetTime != nil {
                 return true
             } else {
-                showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Select duration")
+                showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Select duration")
                 return false
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Select walk or run")
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Select walk or run")
             return false
         }
     }

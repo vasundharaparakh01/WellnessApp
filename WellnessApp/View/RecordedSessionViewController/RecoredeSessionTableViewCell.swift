@@ -1,6 +1,6 @@
 //
 //  RecoredeSessionTableViewCell.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 12/12/22.
 //

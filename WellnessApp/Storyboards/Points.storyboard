@@ -20,7 +20,7 @@
         <!--Points View Controller-->
         <scene sceneID="Mf0-jg-BVD">
             <objects>
-                <viewController storyboardIdentifier="PointsViewController" hidesBottomBarWhenPushed="YES" id="8Kd-6Z-Ddg" customClass="PointsViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PointsViewController" hidesBottomBarWhenPushed="YES" id="8Kd-6Z-Ddg" customClass="PointsViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BKd-vJ-vec">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,7 +75,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qab-Wg-SMk">
                                                                 <rect key="frame" x="0.0" y="0.0" width="445" height="40"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg9-xi-fT5" customClass="UIBUtton_Designable" customModule="Luvo" customModuleProvider="target">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg9-xi-fT5" customClass="UIBUtton_Designable" customModule="app_name" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
                                                                         <color key="backgroundColor" red="0.99906603810000005" green="0.61234816739999998" blue="0.11129447639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
@@ -98,7 +98,7 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H44-1x-Pzw" customClass="UIBUtton_Designable" customModule="Luvo" customModuleProvider="target">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H44-1x-Pzw" customClass="UIBUtton_Designable" customModule="app_name" customModuleProvider="target">
                                                                         <rect key="frame" x="115" y="0.0" width="100" height="40"/>
                                                                         <color key="backgroundColor" red="0.99906603810000005" green="0.61234816739999998" blue="0.11129447639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
@@ -121,7 +121,7 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0J-6N-sge" customClass="UIBUtton_Designable" customModule="Luvo" customModuleProvider="target">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0J-6N-sge" customClass="UIBUtton_Designable" customModule="app_name" customModuleProvider="target">
                                                                         <rect key="frame" x="230" y="0.0" width="100" height="40"/>
                                                                         <color key="backgroundColor" red="0.99906603810000005" green="0.61234816739999998" blue="0.11129447639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
@@ -144,7 +144,7 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0Y-dW-Wrp" customClass="UIBUtton_Designable" customModule="Luvo" customModuleProvider="target">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0Y-dW-Wrp" customClass="UIBUtton_Designable" customModule="app_name" customModuleProvider="target">
                                                                         <rect key="frame" x="345" y="0.0" width="100" height="40"/>
                                                                         <color key="backgroundColor" red="0.99906603810000005" green="0.61234816739999998" blue="0.11129447639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
@@ -295,7 +295,7 @@
                                             <action selector="btnNotification:" destination="8Kd-6Z-Ddg" eventType="touchUpInside" id="bWB-pF-O2A"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vD5-ND-qy1" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vD5-ND-qy1" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="390" y="52" width="16" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpA-bP-Wgi">

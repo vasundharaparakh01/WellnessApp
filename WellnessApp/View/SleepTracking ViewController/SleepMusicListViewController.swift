@@ -1,6 +1,6 @@
 //
 //  SleepMusicListViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 14/02/22.
 //
@@ -99,7 +99,7 @@ class SleepMusicListViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -170,7 +170,7 @@ extension SleepMusicListViewController: SleepAudioListDelegate {
             if let arrMusic = meditationAudioData?.musics {
                 if arrMusic.count == 0 {
                     if let message = sleepAudioListResponse?.message {
-                        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+                        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
                     }
                 } else {
                     arrayAudioList = arrMusic
@@ -178,12 +178,12 @@ extension SleepMusicListViewController: SleepAudioListDelegate {
                 }
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveSleepAudioListError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

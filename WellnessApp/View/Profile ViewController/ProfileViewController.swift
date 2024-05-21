@@ -1,6 +1,6 @@
 //
 //  ProfileViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 06/10/21.
 //
@@ -607,7 +607,7 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
             imagePicker.allowsEditing = true
             self.present(imagePicker, animated: true)
         } else {
-            self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantAlertMessage.CameraUnavailable)
+            self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantAlertMessage.CameraUnavailable)
         }
     }
     
@@ -640,7 +640,7 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
                 let connectionStatus = ConnectionManager.shared.hasConnectivity()
                 if (connectionStatus == false) {
                     DispatchQueue.main.async {
-                        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                         return
                     }
                 } else {
@@ -655,7 +655,7 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
                                 if firstName.count > 0 && firstName != "" {
                                     if lastName.count > 0 && lastName != "" {
                                         if phoneNo.count == 1 || phoneNo.count == 2 || phoneNo.count == 3 || phoneNo.count == 4 || phoneNo.count == 5 || phoneNo.count == 6 || phoneNo.count == 7 || phoneNo.count == 8 || phoneNo.count == 9{
-                                            self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.phoneValidation)
+                                            self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.phoneValidation)
                                         } else {
                                             var username: String
                                             username = "\(firstName) \(lastName)"
@@ -666,24 +666,24 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
                                             profileViewModel.postProfileUpdateData(profileRequest: request, token: token)
                                         }
                                     } else {
-                                        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.lastNameEmpty)
+                                        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.lastNameEmpty)
                                     }
                                 } else {
-                                    self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.firstNameEmpty)
+                                    self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.firstNameEmpty)
                                 }
                             } else {
-                                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.phoneValidation)
+                                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.phoneValidation)
                             }
                         } else {
-                            self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.lastNameEmpty)
+                            self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.lastNameEmpty)
                         }
                     } else {
-                        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.firstNameEmpty)
+                        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.firstNameEmpty)
                     }
                 }
             } else {
                 // no changes to save
-//                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantAlertMessage.ProfileNoChanges)
+//                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantAlertMessage.ProfileNoChanges)
                 if boolAlert == false {
                     boolEdit = false
                     
@@ -725,7 +725,7 @@ extension ProfileViewController {
             let connectionStatus = ConnectionManager.shared.hasConnectivity()
             if (connectionStatus == false) {
                 DispatchQueue.main.async {
-                    self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                    self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                     return
                 }
             } else {
@@ -841,22 +841,22 @@ extension ProfileViewController {
                             }
                         }
                     } else {
-                        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.lastNameEmpty)
+                        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.lastNameEmpty)
                         boolAlert = true
                         return true
                     }
                 } else {
-                    self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.firstNameEmpty)
+                    self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.firstNameEmpty)
                     boolAlert = true
                     return true
                 }
             } else {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.lastNameEmpty)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.lastNameEmpty)
                 boolAlert = true
                 return true
             }
         } else {
-            self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.firstNameEmpty)
+            self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.firstNameEmpty)
             boolAlert = true
             return true
         }

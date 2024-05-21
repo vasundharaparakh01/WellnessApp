@@ -1,6 +1,6 @@
 //
 //  ChatImageFullScreenVC.swift
-//  Luvo
+ 
 //
 //  Created by Sahidul on 27/12/21.
 //

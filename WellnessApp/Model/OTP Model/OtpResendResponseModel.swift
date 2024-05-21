@@ -1,6 +1,6 @@
 //
 //  OtpResendResponseModel.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 14/09/21.
 //

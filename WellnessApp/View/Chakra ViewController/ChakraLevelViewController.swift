@@ -1,6 +1,6 @@
 //
 //  ChakraLevelViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 25/11/21.
 //
@@ -72,7 +72,7 @@ class ChakraLevelViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -195,7 +195,7 @@ class ChakraLevelViewController: UIViewController {
             if crownList == 1
             {
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to change the App Theme color with Third Eye Chakra", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to change the App Theme color with Third Eye Chakra", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                   print("Handle Ok logic here")
@@ -216,7 +216,7 @@ class ChakraLevelViewController: UIViewController {
                 
                 //Listening to all the audios in chakra meditation will enable you to change the app theme color
                 
-                let refreshAlert = UIAlertController(title: "Luvo", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
+                let refreshAlert = UIAlertController(title: "app_name", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
 
                             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                                   print("Handle Ok logic here")
@@ -251,7 +251,7 @@ class ChakraLevelViewController: UIViewController {
             {
             
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to change the App Theme color with Third Eye Chakra", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to change the App Theme color with Third Eye Chakra", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                   print("Handle Ok logic here")
@@ -271,7 +271,7 @@ class ChakraLevelViewController: UIViewController {
             else
             {
                 
-                let refreshAlert = UIAlertController(title: "Luvo", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
+                let refreshAlert = UIAlertController(title: "app_name", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
 
                             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                                   print("Handle Ok logic here")
@@ -303,7 +303,7 @@ class ChakraLevelViewController: UIViewController {
             if crownList==1
             {
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to change the App Theme color with Throat Chakra", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to change the App Theme color with Throat Chakra", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                   print("Handle Ok logic here")
@@ -322,7 +322,7 @@ class ChakraLevelViewController: UIViewController {
             else
             {
                 
-                let refreshAlert = UIAlertController(title: "Luvo", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
+                let refreshAlert = UIAlertController(title: "app_name", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
 
                             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                                   print("Handle Ok logic here")
@@ -355,7 +355,7 @@ class ChakraLevelViewController: UIViewController {
             if crownList==1
             {
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to change the App Theme color with Heart Chakra", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to change the App Theme color with Heart Chakra", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                   print("Handle Ok logic here")
@@ -374,7 +374,7 @@ class ChakraLevelViewController: UIViewController {
             else
             {
                 
-                let refreshAlert = UIAlertController(title: "Luvo", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
+                let refreshAlert = UIAlertController(title: "app_name", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
 
                             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                                   print("Handle Ok logic here")
@@ -409,7 +409,7 @@ class ChakraLevelViewController: UIViewController {
             if crownList==1
             {
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to change the App Theme color with Solar Plexus Chakra", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to change the App Theme color with Solar Plexus Chakra", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                   print("Handle Ok logic here")
@@ -428,7 +428,7 @@ class ChakraLevelViewController: UIViewController {
             else
             {
                 
-                let refreshAlert = UIAlertController(title: "Luvo", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
+                let refreshAlert = UIAlertController(title: "app_name", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
 
                             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                                   print("Handle Ok logic here")
@@ -461,7 +461,7 @@ class ChakraLevelViewController: UIViewController {
             if crownList==1
             {
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to change the App Theme color with Sacral Chakra", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to change the App Theme color with Sacral Chakra", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                   print("Handle Ok logic here")
@@ -479,7 +479,7 @@ class ChakraLevelViewController: UIViewController {
             else
             {
                 
-                let refreshAlert = UIAlertController(title: "Luvo", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
+                let refreshAlert = UIAlertController(title: "app_name", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
 
                             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                                   print("Handle Ok logic here")
@@ -513,7 +513,7 @@ class ChakraLevelViewController: UIViewController {
             if crownList==1
             {
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to change the App Theme color with Root Chakra", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to change the App Theme color with Root Chakra", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                   print("Handle Ok logic here")
@@ -533,7 +533,7 @@ class ChakraLevelViewController: UIViewController {
             else
             {
                 
-                let refreshAlert = UIAlertController(title: "Luvo", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
+                let refreshAlert = UIAlertController(title: "app_name", message: "Listening to all the audios in chakra meditation will enable you to change the app theme color", preferredStyle: UIAlertController.Style.alert)
 
                             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                                   print("Handle Ok logic here")
@@ -578,13 +578,13 @@ extension ChakraLevelViewController: ChakraDisplayViewModelDelegate {
             setupChakraAccordingly()
                         
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveChakraDisplayError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -603,14 +603,14 @@ extension ChakraLevelViewController: ChakraColorChangeViewModelDelegate
         }
         else
         {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
         
     }
     
     func didReceiveChakraColorChangeError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     

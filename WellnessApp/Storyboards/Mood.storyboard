@@ -17,7 +17,7 @@
         <!--Mood View Controller-->
         <scene sceneID="lAO-Re-1Ea">
             <objects>
-                <viewController storyboardIdentifier="MoodViewController" modalTransitionStyle="flipHorizontal" hidesBottomBarWhenPushed="YES" id="8ud-VD-EE0" customClass="MoodViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoodViewController" modalTransitionStyle="flipHorizontal" hidesBottomBarWhenPushed="YES" id="8ud-VD-EE0" customClass="MoodViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ClJ-eZ-T9w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                     <constraint firstAttribute="height" constant="630" id="stT-Id-e33"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9H-8b-ygp" customClass="UIBUtton_Designable" customModule="Luvo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9H-8b-ygp" customClass="UIBUtton_Designable" customModule="app_name" customModuleProvider="target">
                                 <rect key="frame" x="62" y="581" width="291" height="48"/>
                                 <color key="backgroundColor" red="0.81568627449999997" green="0.35294117650000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>

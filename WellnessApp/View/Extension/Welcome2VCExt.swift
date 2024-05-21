@@ -1,6 +1,6 @@
 //
 //  Welcome2VCExt.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 20/09/21.
 //
@@ -13,7 +13,7 @@ extension Welcome2ViewController: Welcome2ViewModelDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -30,7 +30,7 @@ extension Welcome2ViewController: Welcome2ViewModelDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -59,13 +59,13 @@ extension Welcome2ViewController: Welcome2ViewModelDelegate {
             setupQuestionData(data: welcome2QuestionResponse)
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: welcome2QuestionResponse?.error ?? ConstantAlertMessage.TryAgainLater)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: welcome2QuestionResponse?.error ?? ConstantAlertMessage.TryAgainLater)
         }
     }
     
     func didReceiveWelcome2QuestionError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     func didReceiveWelcome2AnswerResponse(welcome2AnswerResponse: Welcome2AnswerResponse?) {
@@ -74,7 +74,7 @@ extension Welcome2ViewController: Welcome2ViewModelDelegate {
         if(welcome2AnswerResponse?.status != nil && welcome2AnswerResponse?.status?.lowercased() == ConstantStatusAPI.success) {
 //            dump(welcome2AnswerResponse)
             
-            self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+            self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                          message: welcome2AnswerResponse?.message ?? ConstantStatusAPI.success,
                                          alertStyle: .alert,
                                          actionTitles: [ConstantAlertTitle.OkAlertTitle],
@@ -87,13 +87,13 @@ extension Welcome2ViewController: Welcome2ViewModelDelegate {
                                          ])
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: welcome2AnswerResponse?.error ?? ConstantAlertMessage.TryAgainLater)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: welcome2AnswerResponse?.error ?? ConstantAlertMessage.TryAgainLater)
         }
     }
     
     func didReceiveWelcome2AnswerError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
 }

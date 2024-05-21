@@ -1,6 +1,6 @@
 //
 //  DeleteUserResponse.swift
-//  Luvo
+ 
 //
 //  Created by Nilanjan Ghosh on 08/04/23.
 //

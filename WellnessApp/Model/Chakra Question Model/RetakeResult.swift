@@ -1,6 +1,6 @@
 //
 //  RetakeResult.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 10/06/22.
 //

@@ -1,6 +1,6 @@
 //
 //  QuestionOneViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 09/09/21.
 //
@@ -168,14 +168,14 @@ class QuestionOneViewController: UIViewController {
                 counter += 1
                 flag = counter
             } else {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Please select a option")
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Please select a option")
             }
         } else {    //Check last array index answer then call API or show alert!!!
             if arrayStoreAnswer?[counter - 1].answerId != nil {
                 debugPrint("API CALLLLLLLLL")
                 saveAnswerAPICall()
             } else {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Please select a option")
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Please select a option")
             }
         }
     }

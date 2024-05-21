@@ -1,6 +1,6 @@
 //
 //  FullAudioPlayerViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 30/10/21.
 //
@@ -406,7 +406,7 @@ class FullAudioPlayerViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -695,7 +695,7 @@ extension FullAudioPlayerViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -718,16 +718,16 @@ extension FullAudioPlayerViewController: MeditationAudioComplete5minViewModelDel
         
         if(audioComplete5minDataResponse?.status != nil && audioComplete5minDataResponse?.status?.lowercased() == ConstantStatusAPI.success) {
 //            dump(audioComplete5minDataResponse)
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantAlertMessage.UnlockMusic)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantAlertMessage.UnlockMusic)
         } else {
-//            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+//            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
             debugPrint(ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveAudioComplete5minDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -747,16 +747,16 @@ extension FullAudioPlayerViewController: FavouritesViewModelDelegate {
             }
             
             guard let message = favouriteDataResponse?.message else { return }
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveFavouriteDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -766,7 +766,7 @@ extension FullAudioPlayerViewController: TimeTrackingDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -776,7 +776,7 @@ extension FullAudioPlayerViewController: TimeTrackingDelegate {
             }
             
             let trackInSecond = Date().timeDifference(startTime: startTrackTime, endTime: Date())
-            let request = TimeTrackingRequest(type: ConstantTimeTrackType.audio, musicId: ConstantAlertTitle.LuvoAlertTitle, listenMin: trackInSecond)
+            let request = TimeTrackingRequest(type: ConstantTimeTrackType.audio, musicId: ConstantAlertTitle.app_nameAlertTitle, listenMin: trackInSecond)
             print("--------\(request)")
             self.view.startActivityIndicator(title: ConstantActivityIndicatorMessage.pkLoading, color: .white)
             timeTrackViewModel.postTimeTracking(token: token, trackingRequest: request)
@@ -793,7 +793,7 @@ extension FullAudioPlayerViewController: TimeTrackingDelegate {
             print("Time Tracking Upadted---\(message)")
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
         navigationController?.popViewController(animated: true)
     }
@@ -801,7 +801,7 @@ extension FullAudioPlayerViewController: TimeTrackingDelegate {
     func didReceiveTrackingError(statusCode: String?) {
         self.view.stopActivityIndicator()
         print("Time Tracking Error---\(String(describing: statusCode))")
-//        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+//        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
         navigationController?.popViewController(animated: true)
     }
     

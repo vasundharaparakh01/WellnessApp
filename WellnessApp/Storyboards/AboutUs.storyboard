@@ -17,7 +17,7 @@
         <!--About Us View Controller-->
         <scene sceneID="fcC-ZR-34g">
             <objects>
-                <viewController storyboardIdentifier="AboutUsViewController" hidesBottomBarWhenPushed="YES" id="Ohk-j0-5q4" customClass="AboutUsViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutUsViewController" hidesBottomBarWhenPushed="YES" id="Ohk-j0-5q4" customClass="AboutUsViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uEL-Xe-mSL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,7 +128,7 @@
                                             <action selector="btnNotification:" destination="Ohk-j0-5q4" eventType="touchUpInside" id="UrB-8P-k1q"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Evs-5M-Pzo" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Evs-5M-Pzo" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="390" y="52" width="16" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nf3-S6-p3o">

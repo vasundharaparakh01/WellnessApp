@@ -20,7 +20,7 @@
         <!--User Chat Image Full ScreenVC View Controller-->
         <scene sceneID="0R7-od-tmK">
             <objects>
-                <viewController storyboardIdentifier="ChatImageFullScreenVC" id="mJX-KK-L14" customClass="UserChatImageFullScreenVCViewController" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatImageFullScreenVC" id="mJX-KK-L14" customClass="UserChatImageFullScreenVCViewController" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pM6-QJ-6Uw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +89,7 @@
         <!--Chat With CoachVC-->
         <scene sceneID="bck-HR-47k">
             <objects>
-                <viewController storyboardIdentifier="ChatWithCoachVC" hidesBottomBarWhenPushed="YES" id="IWa-V6-hRa" customClass="ChatWithCoachVC" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatWithCoachVC" hidesBottomBarWhenPushed="YES" id="IWa-V6-hRa" customClass="ChatWithCoachVC" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9GY-qj-MKw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,7 +127,7 @@
                                             <action selector="btnNotification:" destination="IWa-V6-hRa" eventType="touchUpInside" id="uI1-cJ-bWo"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udg-Ld-jHE" customClass="UIView_Designable" customModule="Luvo" customModuleProvider="target">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udg-Ld-jHE" customClass="UIView_Designable" customModule="app_name" customModuleProvider="target">
                                         <rect key="frame" x="390" y="52" width="16" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqi-MC-4ke">

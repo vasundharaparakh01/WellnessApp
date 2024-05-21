@@ -1,6 +1,6 @@
 //
 //  CoachTableViewCell.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 17/11/22.
 //

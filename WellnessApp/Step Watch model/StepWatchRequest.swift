@@ -1,6 +1,6 @@
 //
 //  StepWatchRequest.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 27/07/22.
 //

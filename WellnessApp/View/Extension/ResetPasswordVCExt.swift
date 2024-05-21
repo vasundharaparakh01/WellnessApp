@@ -1,6 +1,6 @@
 //
 //  ResetPasswordVCExt.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 15/09/21.
 //
@@ -16,7 +16,7 @@ extension ResetPasswordViewController: ResetPasswordViewModelDelegate {
 //            dump(resetResponse)
             
             if let message = resetResponse?.message?.firstCapitalized {
-                self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                              message: message,
                                              alertStyle: .alert,
                                              actionTitles: [ConstantAlertTitle.OkAlertTitle],
@@ -29,13 +29,13 @@ extension ResetPasswordViewController: ResetPasswordViewModelDelegate {
                                              ])
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: resetResponse?.error ?? ConstantAlertMessage.TryAgainLater)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: resetResponse?.error ?? ConstantAlertMessage.TryAgainLater)
         }
     }
     
     func didReceiveResetPasswordError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     

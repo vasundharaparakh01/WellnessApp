@@ -1,6 +1,6 @@
 //
 //  UIImageView+IBInspect.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 29/09/21.
 //

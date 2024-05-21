@@ -1,6 +1,6 @@
 //
 //  CoachRecordedSessionResponse.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 07/02/23.
 //

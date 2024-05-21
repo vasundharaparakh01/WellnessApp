@@ -1,6 +1,6 @@
 //
 //  CoachCallVC.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 03/01/23.
 //
@@ -361,7 +361,7 @@ class CoachCallVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, U
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -595,7 +595,7 @@ class CoachCallVC: UIViewController, UITextFieldDelegate, UITableViewDelegate, U
 
     @IBAction func btnEndCall(_ sender: Any) {
 
-        let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to end this conference call", preferredStyle: UIAlertController.Style.alert)
+        let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to end this conference call", preferredStyle: UIAlertController.Style.alert)
 
         refreshAlert.addAction(UIAlertAction(title: "ok", style: .default, handler: { (action: UIAlertAction!) in
               print("Handle Ok logic here")

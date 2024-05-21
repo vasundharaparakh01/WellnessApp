@@ -1,6 +1,6 @@
 //
 //  SettingsViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 27/12/21.
 //
@@ -139,7 +139,7 @@ class SettingsViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -174,7 +174,7 @@ class SettingsViewController: UIViewController {
     @objc func DeleteInvit(_ sender: UITapGestureRecognizer) {
 
 
-        let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to delete your acount", preferredStyle: UIAlertController.Style.alert)
+        let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to delete your acount", preferredStyle: UIAlertController.Style.alert)
 
         refreshAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
               print("Handle Ok logic here")
@@ -238,7 +238,7 @@ class SettingsViewController: UIViewController {
             //setNotification(Url: Common.WebserviceAPI.setWaterNotification, onOffStatus: NotificationOnOff.on)
            // UserDefaults.standard.set(true, forKey: "isFromWatch")
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to measure your regular activities through Apple Watch", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to measure your regular activities through Apple Watch", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
                   print("Handle Ok logic here")
@@ -278,7 +278,7 @@ class SettingsViewController: UIViewController {
            // setNotification(Url: Common.WebserviceAPI.setWaterNotification, onOffStatus: NotificationOnOff.on)
            // UserDefaults.standard.set(false, forKey: "isFromWatch")
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to measure your regular activities through iPhone", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to measure your regular activities through iPhone", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
                   print("Handle Ok logic here")
@@ -319,7 +319,7 @@ class SettingsViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -384,7 +384,7 @@ extension SettingsViewController: SettingNotificationDelegate {
                 switchMeditaionAudio.setOn(false, animated: true)
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
@@ -394,16 +394,16 @@ extension SettingsViewController: SettingNotificationDelegate {
         if(settingSetDataResponse?.status != nil && settingSetDataResponse?.status?.lowercased() == ConstantStatusAPI.success) {
 //            dump(waterStatDataResponse)
             if let msg = settingSetDataResponse?.message?.firstCapitalized {
-                showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: msg)
+                showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: msg)
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: settingSetDataResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: settingSetDataResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveSettingDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
 }
@@ -430,7 +430,7 @@ extension SettingsViewController : DeleteUserDelegate
             sceneDelegate.window!.rootViewController = rootNC
         }
         else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: DeleteResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: DeleteResponse?.message ?? ConstantStatusAPI.failed)
         }
 
     }

@@ -1,6 +1,6 @@
 //
 //  HomeVCExt.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 20/09/21.
 //
@@ -14,7 +14,7 @@ extension HomeViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -31,7 +31,7 @@ extension HomeViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
             }
         } else {
             guard let token = UserDefaults.standard.value(forKey: ConstantUserDefaultTag.udToken) as? String else {
@@ -79,13 +79,13 @@ extension HomeViewController: HomeViewModelDelegate {
             setupUI()
             setupUIData()
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveHomeError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     func setupUIData() {
@@ -196,13 +196,13 @@ extension HomeViewController: ChakraDisplayViewModelDelegate {
 //            }
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveChakraDisplayError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -216,7 +216,7 @@ extension HomeViewController:LiveJoinViewModelDelegate
            
             debugPrint(liveResponse?.joinedsessionsdetails?.sessionId as Any)
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
         
     }
@@ -225,7 +225,7 @@ extension HomeViewController:LiveJoinViewModelDelegate
         
         
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -617,7 +617,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             navigationController?.pushViewController(blogDetailVC, animated: true)
         }else if collectionView == collRec{
             
-//            let refreshAlert = UIAlertController(title: "Luvo", message: "Recorded Sessions is coming soon", preferredStyle: UIAlertController.Style.alert)
+//            let refreshAlert = UIAlertController(title: "app_name", message: "Recorded Sessions is coming soon", preferredStyle: UIAlertController.Style.alert)
 //
 //            refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
 //                  print("Handle Ok logic here")
@@ -644,7 +644,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
         }else {
             
-//            let refreshAlert = UIAlertController(title: "Luvo", message: "Live Sessions is coming soon", preferredStyle: UIAlertController.Style.alert)
+//            let refreshAlert = UIAlertController(title: "app_name", message: "Live Sessions is coming soon", preferredStyle: UIAlertController.Style.alert)
 //
 //            refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
 //                  print("Handle Ok logic here")
@@ -863,7 +863,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         else
         {
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                   print("Handle Ok logic here")

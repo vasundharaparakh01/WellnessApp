@@ -1,6 +1,6 @@
 //
 //  VideoPlay.swift
-//  Luvo
+ 
 //
 //  Created by Nilanjan Ghosh on 21/06/22.
 //
@@ -312,7 +312,7 @@ class VideoPlay: UIViewController, FavouritesViewModelDelegate {
 //        navigationController?.pushViewController(notifyVC, animated: true)
         
         
-        let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to measure your regular activities through", preferredStyle: UIAlertController.Style.alert)
+        let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to measure your regular activities through", preferredStyle: UIAlertController.Style.alert)
 
         refreshAlert.addAction(UIAlertAction(title: "iPhone", style: .default, handler: { (action: UIAlertAction!) in
               print("Handle Ok logic here")
@@ -390,7 +390,7 @@ extension VideoPlay: TimeTrackingDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -400,7 +400,7 @@ extension VideoPlay: TimeTrackingDelegate {
             }
             
             let trackInSecond = Date().timeDifference(startTime: startTrackTime, endTime: Date())
-            let request = TimeTrackingRequest(type: ConstantTimeTrackType.video, musicId: ConstantAlertTitle.LuvoAlertTitle, listenMin: trackInSecond)
+            let request = TimeTrackingRequest(type: ConstantTimeTrackType.video, musicId: ConstantAlertTitle.app_nameAlertTitle, listenMin: trackInSecond)
             print("--------\(request)")
             self.view.startActivityIndicator(title: ConstantActivityIndicatorMessage.pkLoading, color: .white)
             timeTrackViewModel.postTimeTracking(token: token, trackingRequest: request)
@@ -418,7 +418,7 @@ extension VideoPlay: TimeTrackingDelegate {
             
         } else {
             print("Time Tracking Upadted---\(ConstantStatusAPI.failed)")
-//            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+//            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
         
         self.navigationController?.popViewController(animated: true)
@@ -428,7 +428,7 @@ extension VideoPlay: TimeTrackingDelegate {
     func didReceiveTrackingError(statusCode: String?) {
         self.view.stopActivityIndicator()
         print("Time Tracking Error---\(String(describing: statusCode))")
-//        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+//        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
         navigationController?.popViewController(animated: true)
     }
     
@@ -453,8 +453,8 @@ extension VideoPlay {
         }
         else
         {
-              // let videoUrl = "https://luvo.s3.us-east-2.amazonaws.com/uploads/luvo-video.mp4"
-        videoUrl = "https://luvo.s3.us-east-2.amazonaws.com/uploads/luvo-video.mp4"
+              // let videoUrl = "https://app_name.s3.us-east-2.amazonaws.com/uploads/app_name-video.mp4"
+        videoUrl = "https://app_name.s3.us-east-2.amazonaws.com/uploads/app_name-video.mp4"
         }
         
         guard let urlString = videoUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
@@ -604,7 +604,7 @@ extension VideoPlay {
             else
             {
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to measure your regular activities through", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to measure your regular activities through", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "iPhone", style: .default, handler: { (action: UIAlertAction!) in
                   print("Handle Ok logic here")
@@ -646,15 +646,15 @@ extension VideoPlay {
 //            }
 //
 //            guard let message = favouriteDataResponse?.message else { return }
-//            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+//            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
 //
 //        } else {
-//            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+//            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
 //        }
 //    }
 //
 //    func didReceiveFavouriteDataError(statusCode: String?) {
 //        self.view.stopActivityIndicator()
-//        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+//        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
 //    }
 //}

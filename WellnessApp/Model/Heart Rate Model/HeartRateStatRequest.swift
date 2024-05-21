@@ -1,6 +1,6 @@
 //
 //  HeartRateStatRequest.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 09/12/21.
 //

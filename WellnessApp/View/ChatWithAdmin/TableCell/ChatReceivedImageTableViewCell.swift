@@ -1,6 +1,6 @@
 //
 //  ChatReceivedImageTableViewCell.swift
-//  Luvo
+ 
 //
 //  Created by Sahidul on 25/12/21.
 //

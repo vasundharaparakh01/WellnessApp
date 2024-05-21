@@ -1,6 +1,6 @@
 //
 //  SearchMeditationViewController.swift
-//  Luvo
+ 
 //
 //  Created by Sahidul on 13/12/21.
 //
@@ -304,18 +304,18 @@ class SearchMeditationViewController: UIViewController {
         ///Check if search textfield have 1 letter or not. If 1 then no click else click
         
         guard let searchString = self.txtSearch.text else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Minimum 2 characters is required for search result")
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Minimum 2 characters is required for search result")
             return
         }
         
         if searchString.count < 2 || searchString == "" {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Minimum 2 characters is required for search result")
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Minimum 2 characters is required for search result")
         } else {
             //api call here
             let connectionStatus = ConnectionManager.shared.hasConnectivity()
             if (connectionStatus == false) {
                 DispatchQueue.main.async {
-                    self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                    self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                     return
                 }
             } else {
@@ -463,7 +463,7 @@ extension SearchMeditationViewController: UITableViewDelegate, UITableViewDataSo
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -482,7 +482,7 @@ extension SearchMeditationViewController: UITableViewDelegate, UITableViewDataSo
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -513,7 +513,7 @@ extension SearchMeditationViewController: SearchAudioViewModelDelegate {
                 arrayVideoList.removeAll()
                 if arrMusic.count == 0 && videoMusic?.count == 0{
                     if let message = meditationAudioDataResponse?.message {
-                        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+                        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
                     }
                 } else if arrMusic.count != 0{
                     arrayAudioList = arrMusic
@@ -523,13 +523,13 @@ extension SearchMeditationViewController: SearchAudioViewModelDelegate {
                 tblSearchAudio.reloadData()
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveMeditationAudioDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -539,15 +539,15 @@ extension SearchMeditationViewController: FavouritesViewModelDelegate {
         self.view.stopActivityIndicator()
         if(favouriteDataResponse?.status != nil && favouriteDataResponse?.status?.lowercased() == ConstantStatusAPI.success) {
             guard let message = favouriteDataResponse?.message else { return }
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveFavouriteDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 

@@ -1,6 +1,6 @@
 //
 //  SoothingVideoPlayerViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 27/10/21.
 //
@@ -129,7 +129,7 @@ class SoothingVideoPlayerViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -170,7 +170,7 @@ extension SoothingVideoPlayerViewController {
         
         guard let videoUrl = soothingVideoData?.musicLocation else { return }
         
-         //       let videoUrl = "https://luvo.s3.us-east-2.amazonaws.com/uploads/luvo-video.mp4"
+         //       let videoUrl = "https://app_name.s3.us-east-2.amazonaws.com/uploads/app_name-video.mp4"
         
         guard let urlString = videoUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
         print("VIDEO DATA------\(urlString)")
@@ -315,16 +315,16 @@ extension SoothingVideoPlayerViewController: FavouritesViewModelDelegate {
             }
             
             guard let message = favouriteDataResponse?.message else { return }
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveFavouriteDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -334,7 +334,7 @@ extension SoothingVideoPlayerViewController: TimeTrackingDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -344,7 +344,7 @@ extension SoothingVideoPlayerViewController: TimeTrackingDelegate {
             }
             
             let trackInSecond = Date().timeDifference(startTime: startTrackTime, endTime: Date())
-            let request = TimeTrackingRequest(type: ConstantTimeTrackType.video, musicId: ConstantAlertTitle.LuvoAlertTitle, listenMin: trackInSecond)
+            let request = TimeTrackingRequest(type: ConstantTimeTrackType.video, musicId: ConstantAlertTitle.app_nameAlertTitle, listenMin: trackInSecond)
             print("--------\(request)")
             self.view.startActivityIndicator(title: ConstantActivityIndicatorMessage.pkLoading, color: .white)
             timeTrackViewModel.postTimeTracking(token: token, trackingRequest: request)
@@ -362,7 +362,7 @@ extension SoothingVideoPlayerViewController: TimeTrackingDelegate {
             
         } else {
             print("Time Tracking Upadted---\(ConstantStatusAPI.failed)")
-//            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+//            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
         
         self.navigationController?.popViewController(animated: true)
@@ -372,7 +372,7 @@ extension SoothingVideoPlayerViewController: TimeTrackingDelegate {
     func didReceiveTrackingError(statusCode: String?) {
         self.view.stopActivityIndicator()
         print("Time Tracking Error---\(String(describing: statusCode))")
-//        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+//        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
         navigationController?.popViewController(animated: true)
     }
     

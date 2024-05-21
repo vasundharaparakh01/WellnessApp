@@ -1,6 +1,6 @@
 //
 //  BlogCommentSendRequest.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 25/12/21.
 //

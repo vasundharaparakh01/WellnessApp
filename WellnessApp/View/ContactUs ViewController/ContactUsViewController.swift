@@ -1,6 +1,6 @@
 //
 //  ContactUsViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 2022-01-18.
 //
@@ -118,7 +118,7 @@ class ContactUsViewController: UIViewController, UITextFieldDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -134,7 +134,7 @@ class ContactUsViewController: UIViewController, UITextFieldDelegate {
                             if name.count > 0 && name != "" {
                                 if ValidateEmail().isValidEmail(email) == true {
                                     if phoneNo.count < 10 {
-                                        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.phoneValidation)
+                                        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.phoneValidation)
                                     } else {
                                         if ValidateTextView(textView: txtViewMessage) == true {
                                             let request = ContactUsRequest(name: name, email: email, phone: phoneNo, message: msg)
@@ -142,26 +142,26 @@ class ContactUsViewController: UIViewController, UITextFieldDelegate {
                                             self.view.startActivityIndicator(title: ConstantActivityIndicatorMessage.pkLoading, color: .white)
                                             contactViewModel.postContactUs(token: token, contactUsRequest: request)
                                         } else {
-                                            self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.msgEmpty)
+                                            self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.msgEmpty)
                                         }
                                     }
                                 } else {
-                                    self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.emailValid)
+                                    self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.emailValid)
                                 }
                             } else {
-                                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.nameEmpty)
+                                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.nameEmpty)
                             }
                         } else {
-                            self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.msgEmpty)
+                            self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.msgEmpty)
                         }
                     } else {
-                        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.userPhoneIsEmpty)
+                        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.userPhoneIsEmpty)
                     }
                 } else {
-                    self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.userEmailIsEmpty)
+                    self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.userEmailIsEmpty)
                 }
             } else {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.nameEmpty)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.nameEmpty)
             }
         }
     }
@@ -189,17 +189,17 @@ extension ContactUsViewController: ContactUsViewModelDelegate {
 //            dump(waterStatDataResponse)
             
             if let msg = contactUsResponse?.message {
-                showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: msg)
+                showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: msg)
             }
             self.clearData()
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveContactUsError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     private func clearData() {

@@ -1,6 +1,6 @@
 //
 //  HomeViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 02/09/21.
 //
@@ -327,7 +327,7 @@ class HomeViewController: UIViewController, SideMenuDelegate, UITextFieldDelegat
         navigationController?.pushViewController(LiveVC, animated: true)
         
         
-//        let refreshAlert = UIAlertController(title: "Luvo", message: "Recording section is coming soon", preferredStyle: UIAlertController.Style.alert)
+//        let refreshAlert = UIAlertController(title: "app_name", message: "Recording section is coming soon", preferredStyle: UIAlertController.Style.alert)
 //
 //        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
 //              print("Handle Ok logic here")
@@ -344,7 +344,7 @@ class HomeViewController: UIViewController, SideMenuDelegate, UITextFieldDelegat
     @IBAction func btnRecord(_ sender: Any) {
         
         
-        let refreshAlert = UIAlertController(title: "Luvo", message: "Recording section is coming soon", preferredStyle: UIAlertController.Style.alert)
+        let refreshAlert = UIAlertController(title: "app_name", message: "Recording section is coming soon", preferredStyle: UIAlertController.Style.alert)
 
         refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
               print("Handle Ok logic here")
@@ -382,7 +382,7 @@ class HomeViewController: UIViewController, SideMenuDelegate, UITextFieldDelegat
     @IBAction func btnLive(_ sender: Any) {
         
         
-        let refreshAlert = UIAlertController(title: "Luvo", message: "Live section is coming soon", preferredStyle: UIAlertController.Style.alert)
+        let refreshAlert = UIAlertController(title: "app_name", message: "Live section is coming soon", preferredStyle: UIAlertController.Style.alert)
 
         refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
               print("Handle Ok logic here")
@@ -1135,7 +1135,7 @@ extension HomeViewController: WatchHeartDataPostDelegate {
             
             
 //            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-//                self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+//                self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
 //                                        message: "Your heart ",
 //                                        alertStyle: .alert,
 //                                        actionTitles: ["Cancel","OK"],
@@ -1153,7 +1153,7 @@ extension HomeViewController: WatchHeartDataPostDelegate {
            // }
            
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: WatchheartPostDataResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: WatchheartPostDataResponse?.message ?? ConstantStatusAPI.failed)
         }
     
     }
@@ -1201,9 +1201,9 @@ extension HomeViewController {
             //Share with Friends
             print("Share is working------>")
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-                let text = "Luvo© - Your personal health & fitness app"
+                let text = "app_name© - Your personal health & fitness app"
                 let image = UIImage(named: "Splash")
-                let myWebsite = NSURL(string:"https://apps.apple.com/in/app/luvo-zest2live/id1617104475")
+                let myWebsite = NSURL(string:"https://apps.apple.com/in/app/app_name-zest2live/id1617104475")
                 let shareAll: [Any] = [text, image!, myWebsite!]
                 let activityViewController = UIActivityViewController(activityItems: shareAll, applicationActivities: nil)
     //            activityViewController.excludedActivityTypes = [UIActivityTypePrint, UIActivityTypePostToWeibo, UIActivityTypeCopyToPasteboard, UIActivityTypeAddToReadingList, UIActivityTypePostToVimeo]    //Include the app to exclude from sharing
@@ -1280,7 +1280,7 @@ extension HomeViewController {
                 //As You are not in Crown Chakra you are not authorize to retake the quize
                 
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-                    self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                    self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                             message: "Listening to all the audios in Chakra meditation will enable you to Retake The Quiz",
                                             alertStyle: .alert,
                                             actionTitles: ["OK"],
@@ -1297,7 +1297,7 @@ extension HomeViewController {
             else{
                 
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-                    self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                    self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                             message: "Listening to all the audios in Chakra meditation will enable you to Retake The Quiz",
                                             alertStyle: .alert,
                                             actionTitles: ["OK"],
@@ -1316,7 +1316,7 @@ extension HomeViewController {
         case 11:
             //Logout
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-                self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                         message: "Do you want to logout ?",
                                         alertStyle: .alert,
                                         actionTitles: ["Cancel","OK"],
@@ -1362,7 +1362,7 @@ extension HomeViewController: LogoutDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -1417,7 +1417,7 @@ extension HomeViewController: LogoutDelegate {
 //            dump(profilePictureUploadResponse)
            
             if let msg = logoutResponse?.message {
-                openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                         message: "Logout Successful",
                                         alertStyle: .alert,
                                         actionTitles: ["OK"],
@@ -1435,13 +1435,13 @@ extension HomeViewController: LogoutDelegate {
                
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: logoutResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: logoutResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveLogoutError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -1475,7 +1475,7 @@ extension HomeViewController: TimezoneDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -1513,12 +1513,12 @@ extension HomeViewController: TimezoneDelegate {
             }
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: timezoneResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: timezoneResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveTimezoneError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

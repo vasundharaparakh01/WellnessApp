@@ -1,6 +1,6 @@
 //
 //  MeditationModel.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 18/10/21.
 //

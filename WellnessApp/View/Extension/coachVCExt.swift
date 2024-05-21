@@ -1,6 +1,6 @@
 //
 //  coachVCExt.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 22/11/22.
 //
@@ -17,7 +17,7 @@ extension CoachViewController
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
             }
         } else {
             guard let token = UserDefaults.standard.value(forKey: ConstantUserDefaultTag.udToken) as? String else {

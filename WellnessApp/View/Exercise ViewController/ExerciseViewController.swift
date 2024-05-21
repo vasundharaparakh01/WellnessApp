@@ -1,6 +1,6 @@
 //
 //  ExerciseViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 08/11/21.
 //
@@ -100,7 +100,7 @@ class ExerciseViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -121,7 +121,7 @@ class ExerciseViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -192,7 +192,7 @@ extension ExerciseViewController: GetGoalDelegate {
                     }
                 }
             } else {
-                openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                         message: exerciseGoalDataResponse?.message ?? "Success",
                                         alertStyle: .alert,
                                         actionTitles: ["OK"],
@@ -215,13 +215,13 @@ extension ExerciseViewController: GetGoalDelegate {
                                         ])
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: exerciseGoalDataResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: exerciseGoalDataResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveGoalDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     func sentToNextPage(stepAcheived: String) {

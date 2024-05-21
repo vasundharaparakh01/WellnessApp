@@ -1,6 +1,6 @@
 //
 //  ForgotPasswordValidation.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 15/09/21.
 //

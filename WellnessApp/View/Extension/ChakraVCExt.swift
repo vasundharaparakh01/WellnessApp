@@ -1,6 +1,6 @@
 //
 //  ChakraVCExt.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 24/09/21.
 //
@@ -35,13 +35,13 @@ extension ChakraViewController: ChakraDisplayViewModelDelegate {
                         
         } else {
             btnBack.isUserInteractionEnabled = false    //If data not coming then don't go to next page
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveChakraDisplayError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     //MARK: - Setup User Alert
@@ -156,7 +156,7 @@ extension ChakraViewController: ChakraDisplayViewModelDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {

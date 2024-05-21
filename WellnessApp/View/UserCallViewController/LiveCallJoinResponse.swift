@@ -1,6 +1,6 @@
 //
 //  LiveCallJoinResponse.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 28/02/23.
 //

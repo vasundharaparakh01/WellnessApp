@@ -1,6 +1,6 @@
 //
 //  AudioPlayer.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 03/09/21.
 //
@@ -18,7 +18,7 @@ class Jukebox: NSObject, AVAudioPlayerDelegate {
     var jukeboxDelegate: JukeboxDelegate?
     
     func playBackgroundMusic() {
-        guard let url = Bundle.main.url(forResource: "WelcomeToLuvo", withExtension: "mp3") else {
+        guard let url = Bundle.main.url(forResource: "WelcomeToapp_name", withExtension: "mp3") else {
             print("url not found")
             return
         }

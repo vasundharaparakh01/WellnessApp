@@ -1,6 +1,6 @@
 //
 //  ResetPasswordViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 15/09/21.
 //
@@ -54,17 +54,17 @@ class ResetPasswordViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
             guard let newPass = txtNewPassword.text else {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.emptyNewPassword)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.emptyNewPassword)
                 return
             }
             
             guard let confirmPass = txtConfirmPassword.text else {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.emptyConfirmPassword)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.emptyConfirmPassword)
                 return
             }
             
@@ -75,7 +75,7 @@ class ResetPasswordViewController: UIViewController {
                 resetPasswordViewModel.resetPassword(resetPasswordRequest: request)
                 
             } else {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantTextfieldAlertTitle.passwordConfirmPasswordNotSame)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantTextfieldAlertTitle.passwordConfirmPasswordNotSame)
             }
         }
     }

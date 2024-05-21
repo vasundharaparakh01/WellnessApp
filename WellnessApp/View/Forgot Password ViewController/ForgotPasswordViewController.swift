@@ -1,6 +1,6 @@
 //
 //  ForgotPasswordViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 13/09/21.
 //
@@ -27,7 +27,7 @@ class ForgotPasswordViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -52,7 +52,7 @@ extension ForgotPasswordViewController: ForgotPasswordViewModelDelegate {
 //            dump(forgotResponse)
             
             if let message = forgotResponse?.message?.firstCapitalized {
-                self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                              message: message,  //String(forgotResponse?.token ?? 0),
                                              alertStyle: .alert,
                                              actionTitles: [ConstantAlertTitle.OkAlertTitle],
@@ -65,12 +65,12 @@ extension ForgotPasswordViewController: ForgotPasswordViewModelDelegate {
                                              ])
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: forgotResponse?.error ?? ConstantAlertMessage.TryAgainLater)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: forgotResponse?.error ?? ConstantAlertMessage.TryAgainLater)
         }
     }
     
     func didReceiveForgotPasswordError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

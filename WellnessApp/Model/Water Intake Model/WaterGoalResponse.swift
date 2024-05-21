@@ -1,6 +1,6 @@
 //
 //  WaterGoalResponse.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 22/11/21.
 //

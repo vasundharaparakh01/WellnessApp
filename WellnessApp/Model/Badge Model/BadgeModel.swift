@@ -1,6 +1,6 @@
 //
 //  BadgeModel.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 05/01/22.
 //

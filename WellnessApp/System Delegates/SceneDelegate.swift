@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 01/09/21.
 //

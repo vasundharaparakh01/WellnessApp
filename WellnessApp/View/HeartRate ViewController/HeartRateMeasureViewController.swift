@@ -1,6 +1,6 @@
 //
 //  HeartRateMeasureViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 02/12/21.
 //
@@ -118,7 +118,7 @@ class HeartRateMeasureViewController: UIViewController {
                         {
 
 
-                            let refreshAlert = UIAlertController(title: "Luvo", message: "You Need to change the Camera Permission to measure Heart Rate ", preferredStyle: UIAlertController.Style.alert)
+                            let refreshAlert = UIAlertController(title: "app_name", message: "You Need to change the Camera Permission to measure Heart Rate ", preferredStyle: UIAlertController.Style.alert)
 
                             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                                   print("Handle Ok logic here")
@@ -211,7 +211,7 @@ class HeartRateMeasureViewController: UIViewController {
     //MARK: - Setup GUI
     fileprivate func setupGUI() {
         //Show initial alert for heart rate usage
-        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantAlertMessage.HeartRateDetectionMsg)
+        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantAlertMessage.HeartRateDetectionMsg)
         
         btnMeasure.backgroundColor = UIColor.colorSetup()
         viewHeartMiddle.backgroundColor = UIColor.colorSetup()
@@ -496,7 +496,7 @@ extension HeartRateMeasureViewController: HeartDataPostDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -516,15 +516,15 @@ extension HeartRateMeasureViewController: HeartDataPostDelegate {
         
         if(heartPostDataResponse?.status != nil && heartPostDataResponse?.status?.lowercased() == ConstantStatusAPI.success) {
 //            dump(waterGoalDataResponse)
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: heartPostDataResponse?.message ?? ConstantStatusAPI.success)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: heartPostDataResponse?.message ?? ConstantStatusAPI.success)
            
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: heartPostDataResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: heartPostDataResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveHeartPostDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

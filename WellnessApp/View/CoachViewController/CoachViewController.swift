@@ -1,6 +1,6 @@
 //
 //  CoachViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 04/07/22.
 //
@@ -1284,7 +1284,7 @@ class CoachViewController: UIViewController,UITextFieldDelegate, UICollectionVie
                 {
                     print("None")
                     
-                    let refreshAlert = UIAlertController(title: "Luvo", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
+                    let refreshAlert = UIAlertController(title: "app_name", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
 
                     refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                           print("Handle Ok logic here")
@@ -1303,7 +1303,7 @@ class CoachViewController: UIViewController,UITextFieldDelegate, UICollectionVie
             {
                 print("None")
                 
-                let refreshAlert = UIAlertController(title: "Luvo", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
+                let refreshAlert = UIAlertController(title: "app_name", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
 
                 refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                       print("Handle Ok logic here")
@@ -1482,7 +1482,7 @@ class CoachViewController: UIViewController,UITextFieldDelegate, UICollectionVie
                 {
                     print("None")
                     
-                    let refreshAlert = UIAlertController(title: "Luvo", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
+                    let refreshAlert = UIAlertController(title: "app_name", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
 
                     refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                           print("Handle Ok logic here")
@@ -1501,7 +1501,7 @@ class CoachViewController: UIViewController,UITextFieldDelegate, UICollectionVie
             {
                 print("None")
                 
-                let refreshAlert = UIAlertController(title: "Luvo", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
+                let refreshAlert = UIAlertController(title: "app_name", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
 
                 refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                       print("Handle Ok logic here")
@@ -1590,7 +1590,7 @@ class CoachViewController: UIViewController,UITextFieldDelegate, UICollectionVie
             {
                 print("None")
                 
-                let refreshAlert = UIAlertController(title: "Luvo", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
+                let refreshAlert = UIAlertController(title: "app_name", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
 
                 refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                       print("Handle Ok logic here")
@@ -1609,7 +1609,7 @@ class CoachViewController: UIViewController,UITextFieldDelegate, UICollectionVie
         {
             print("None")
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                   print("Handle Ok logic here")
@@ -1640,7 +1640,7 @@ class CoachViewController: UIViewController,UITextFieldDelegate, UICollectionVie
     func presentCameraSettings() {
         
         DispatchQueue.main.async {
-        let alertController = UIAlertController (title: "Lovo", message: "Luvo needs camera and micrphone acess permission to start this session, allow permission from settings", preferredStyle: .alert)
+        let alertController = UIAlertController (title: "Lovo", message: "app_name needs camera and micrphone acess permission to start this session, allow permission from settings", preferredStyle: .alert)
 
             let settingsAction = UIAlertAction(title: "Settings", style: .default) { (_) -> Void in
 
@@ -1740,9 +1740,9 @@ extension CoachViewController{
             //Share with Friends
             print("Share is working------>")
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-                let text = "Luvo© - Your personal health & fitness app"
+                let text = "app_name© - Your personal health & fitness app"
                 let image = UIImage(named: "Splash")
-                let myWebsite = NSURL(string:"https://apps.apple.com/in/app/luvo-zest2live/id1617104475")
+                let myWebsite = NSURL(string:"https://apps.apple.com/in/app/app_name-zest2live/id1617104475")
                 let shareAll: [Any] = [text, image!, myWebsite!]
                 let activityViewController = UIActivityViewController(activityItems: shareAll, applicationActivities: nil)
     //            activityViewController.excludedActivityTypes = [UIActivityTypePrint, UIActivityTypePostToWeibo, UIActivityTypeCopyToPasteboard, UIActivityTypeAddToReadingList, UIActivityTypePostToVimeo]    //Include the app to exclude from sharing
@@ -1819,7 +1819,7 @@ extension CoachViewController{
                 //As You are not in Crown Chakra you are not authorize to retake the quize
 
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-                    self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                    self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                             message: "Listening to all the audios in Chakra meditation will enable you to Retake The Quiz",
                                             alertStyle: .alert,
                                             actionTitles: ["OK"],
@@ -1836,7 +1836,7 @@ extension CoachViewController{
             else{
 
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-                    self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                    self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                             message: "Listening to all the audios in Chakra meditation will enable you to Retake The Quiz",
                                             alertStyle: .alert,
                                             actionTitles: ["OK"],
@@ -1855,7 +1855,7 @@ extension CoachViewController{
         case 7:
             //Logout
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-                self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                         message: "Do you want to logout ?",
                                         alertStyle: .alert,
                                         actionTitles: ["Cancel","OK"],
@@ -1899,7 +1899,7 @@ extension CoachViewController: LogoutDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -1956,7 +1956,7 @@ extension CoachViewController: LogoutDelegate {
 //            dump(profilePictureUploadResponse)
 
             if let msg = logoutResponse?.message {
-                openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                         message: "Logout Successful",
                                         alertStyle: .alert,
                                         actionTitles: ["OK"],
@@ -1974,13 +1974,13 @@ extension CoachViewController: LogoutDelegate {
 
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: logoutResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: logoutResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
 
     func didReceiveLogoutError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -2010,7 +2010,7 @@ extension CoachViewController: CoachViewStatusModelDelegate
 
             
         }else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
         
     }
@@ -2090,14 +2090,14 @@ extension CoachViewController: CoachViewModelDelegate
             
             
         }else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveCoachError(statusCode: String?) {
         
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     func setupUI() {
@@ -2488,7 +2488,7 @@ extension CoachViewController: TimezoneDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -2526,13 +2526,13 @@ extension CoachViewController: TimezoneDelegate {
             }
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: timezoneResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: timezoneResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveTimezoneError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 

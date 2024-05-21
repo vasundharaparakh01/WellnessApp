@@ -1,6 +1,6 @@
 //
 //  WaterIntakeStatsViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 23/11/21.
 //
@@ -350,7 +350,7 @@ class WaterIntakeStatsViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -835,7 +835,7 @@ class WaterIntakeStatsViewController: UIViewController {
             popupVC.modalPresentationStyle = .overFullScreen
             self.navigationController?.present(popupVC, animated: true)
         } else {
-            self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantAlertMessage.WaterIntakeAddMsg)
+            self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantAlertMessage.WaterIntakeAddMsg)
         }
     }
     
@@ -918,23 +918,23 @@ extension WaterIntakeStatsViewController: WaterStatDelegate {
                 } else {
 //                    clearData()
                     clearGraph()
-                    showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: waterStatDataResponse?.message ?? ConstantStatusAPI.failed)
+                    showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: waterStatDataResponse?.message ?? ConstantStatusAPI.failed)
                 }
             } else {
 //                clearData()
                 clearGraph()
-                showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: waterStatDataResponse?.message ?? ConstantStatusAPI.failed)
+                showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: waterStatDataResponse?.message ?? ConstantStatusAPI.failed)
             }
             //Refresh general data
             refreshData()
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: waterStatDataResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: waterStatDataResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveWaterStatDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
 //    func clearData() {

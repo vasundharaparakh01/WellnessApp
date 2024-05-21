@@ -1,6 +1,6 @@
 //
 //  GratitudeViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 04/10/21.
 //
@@ -128,7 +128,7 @@ class GratitudeViewController: UIViewController, GratitudeListDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -175,10 +175,10 @@ class GratitudeViewController: UIViewController, GratitudeListDelegate {
                 SetDatePicker()
                 
             } else {
-                showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantAlertMessage.FromDateEmpty)
+                showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantAlertMessage.FromDateEmpty)
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantAlertMessage.FromDateEmpty)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantAlertMessage.FromDateEmpty)
         }
     }
     
@@ -215,7 +215,7 @@ class GratitudeViewController: UIViewController, GratitudeListDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -329,17 +329,17 @@ extension GratitudeViewController {
                     tblGratitude.reloadData()
                 } else {
                     if let message = gratitudeGetDataResponse?.message {
-                        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+                        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
                     }
                 }
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveGratitudeDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

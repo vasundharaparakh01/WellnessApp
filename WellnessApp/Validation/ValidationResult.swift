@@ -1,6 +1,6 @@
 //
 //  ValidationResult.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 13/09/21.
 //

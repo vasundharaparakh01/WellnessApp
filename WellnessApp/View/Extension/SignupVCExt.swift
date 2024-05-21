@@ -1,6 +1,6 @@
 //
 //  SignupVCExt.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 13/09/21.
 //
@@ -13,7 +13,7 @@ extension SignUpViewController: SignupViewModelDelegate, UITextFieldDelegate {
     func didReceiveSignupError(statusCode: String?) {
         self.view.stopActivityIndicator()
         
-        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     func didReceiveSignupResponse(signupResponse: SignupResponse?) {
@@ -44,7 +44,7 @@ extension SignUpViewController: SignupViewModelDelegate, UITextFieldDelegate {
             (UIApplication.shared.delegate as? AppDelegate)?.startTracking()
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: signupResponse?.message ?? ConstantAlertMessage.TryAgainLater)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: signupResponse?.message ?? ConstantAlertMessage.TryAgainLater)
         }
     }
     

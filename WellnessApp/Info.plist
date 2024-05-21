@@ -4,12 +4,12 @@
 <dict>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
-		<string>com.luvo.fetchSteps</string>
+		<string>com.app_name.fetchSteps</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Luvo</string>
+	<string>WellnessApp</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -45,44 +45,12 @@
 			<string>Bundle ID</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.BCS.Luvo</string>
+				<string>com.Wellness.WellnessApp</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>FacebookAdvertiserIDCollectionEnabled</key>
-	<true/>
-	<key>FacebookAppID</key>
-	<string>1196580064212440</string>
-	<key>FacebookAutoLogAppEventsEnabled</key>
-	<true/>
-	<key>FacebookClientToken</key>
-	<string>e1a35402838fbbdcb18f597bcffda646</string>
-	<key>FacebookDisplayName</key>
-	<string>Luvo - Zest2live</string>
-	<key>INIntentsSupported</key>
-	<array>
-		<string>Intent</string>
-	</array>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>fbapi</string>
-		<string>fbapi20130214</string>
-		<string>fbapi20130410</string>
-		<string>fbapi20130702</string>
-		<string>fbapi20131010</string>
-		<string>fbapi20131219</string>
-		<string>fbapi20140410</string>
-		<string>fbapi20140116</string>
-		<string>fbapi20150313</string>
-		<string>fbapi20150629</string>
-		<string>fbapi20160328</string>
-		<string>fbauth</string>
-		<string>fb-messenger-share-api</string>
-		<string>fbauth2</string>
-		<string>fbshareextension</string>
-	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -91,23 +59,23 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>Luvo will access your camera for Hearrate and Live Conference Call</string>
+	<string>WellnessApp will access your camera for Hearrate and Live Conference Call</string>
 	<key>NSHealthShareUsageDescription</key>
-	<string>Luvo want access daily Step cpount</string>
+	<string>WellnessApp want access daily Step cpount</string>
 	<key>NSHealthUpdateUsageDescription</key>
-	<string>Luvo want access daily Step cpount</string>
+	<string>WellnessApp want access daily Step cpount</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Luvo will continously access your location service for tracking exercise running and walking. Continued use of GPS running in the background can dramatically decrease battery life.</string>
+	<string>WellnessApp will continously access your location service for tracking exercise running and walking. Continued use of GPS running in the background can dramatically decrease battery life.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Luvo will continously access your location service for tracking exercise running and walking. Continued use of GPS running in the background can dramatically decrease battery life.</string>
+	<string>WellnessApp will continously access your location service for tracking exercise running and walking. Continued use of GPS running in the background can dramatically decrease battery life.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Luvo will continously access your location service for tracking exercise running and walking. Continued use of GPS running in the background can dramatically decrease battery life.</string>
+	<string>WellnessApp will continously access your location service for tracking exercise running and walking. Continued use of GPS running in the background can dramatically decrease battery life.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Luvo will access your microphone for Live Conference Call</string>
+	<string>WellnessApp will access your microphone for Live Conference Call</string>
 	<key>NSMotionUsageDescription</key>
-	<string>Luvo will access your pedometer motion to track your steps count during exercise running and walking.</string>
+	<string>WellnessApp will access your pedometer motion to track your steps count during exercise running and walking.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Luvo will access your photos for selecting profile picture.</string>
+	<string>WellnessApp will access your photos for selecting profile picture.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>WorkSans</string>

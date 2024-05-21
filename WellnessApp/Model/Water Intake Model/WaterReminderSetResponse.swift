@@ -1,6 +1,6 @@
 //
 //  WaterReminderSetResponse.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 30/11/21.
 //

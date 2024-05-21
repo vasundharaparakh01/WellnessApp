@@ -1,6 +1,6 @@
 //
 //  SignUpViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 08/09/21.
 //
@@ -55,7 +55,7 @@ class SignUpViewController: UIViewController {
             let connectionStatus = ConnectionManager.shared.hasConnectivity()
             if (connectionStatus == false) {
                 DispatchQueue.main.async {
-                    self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                    self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                     return
                 }
             } else {
@@ -71,7 +71,7 @@ class SignUpViewController: UIViewController {
                 signupViewModel.signupUser(signupRequest: request)
             }
         } else {
-            self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantAlertMessage.AcceptTerms)
+            self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantAlertMessage.AcceptTerms)
         }
         
     }

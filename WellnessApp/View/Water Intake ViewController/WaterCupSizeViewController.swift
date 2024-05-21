@@ -1,6 +1,6 @@
 //
 //  WaterCupSizeViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 29/11/21.
 //
@@ -63,7 +63,7 @@ class WaterCupSizeViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -99,7 +99,7 @@ class WaterCupSizeViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -200,13 +200,13 @@ extension WaterCupSizeViewController: WaterCupDelegate {
                 }
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: waterCupDataResponse?.status ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: waterCupDataResponse?.status ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveWaterCupDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 //MARK: - POST Water Cup
@@ -217,7 +217,7 @@ extension WaterCupSizeViewController: WaterCupPostDelegate {
         if(waterCupPostDataResponse?.status != nil && waterCupPostDataResponse?.status?.lowercased() == ConstantStatusAPI.success) {
 //            dump(waterCupPostDataResponse)
             
-            openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+            openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                     message: waterCupPostDataResponse?.message ?? "Success",
                                     alertStyle: .alert,
                                     actionTitles: ["OK"],
@@ -233,12 +233,12 @@ extension WaterCupSizeViewController: WaterCupPostDelegate {
                                     ])
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: waterCupPostDataResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: waterCupPostDataResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveWaterCupPostDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

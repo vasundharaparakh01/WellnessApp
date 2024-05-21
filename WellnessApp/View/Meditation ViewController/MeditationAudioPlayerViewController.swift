@@ -1,7 +1,7 @@
 
 //
 //  MeditationAudioPlayerViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 23/10/21.
 //
@@ -229,7 +229,7 @@ class MeditationAudioPlayerViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -327,7 +327,7 @@ class MeditationAudioPlayerViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -562,7 +562,7 @@ class MeditationAudioPlayerViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -607,7 +607,7 @@ extension MeditationAudioPlayerViewController: MeditationAudioViewModelDelegate 
             if let arrMusic = meditationAudioData?.musics {
                 if arrMusic.count == 0 {
                     if let message = meditationAudioData?.message {
-                        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+                        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
                     }
                 } else {
                     //play the music from the array which has 'completed' array blank
@@ -727,13 +727,13 @@ extension MeditationAudioPlayerViewController: MeditationAudioViewModelDelegate 
                 }
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveMeditationAudioDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -753,16 +753,16 @@ extension MeditationAudioPlayerViewController: FavouritesViewModelDelegate {
             }
             
             guard let message = favouriteDataResponse?.message else { return }
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveFavouriteDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 
@@ -986,8 +986,8 @@ extension MeditationAudioPlayerViewController: MeditationAudioCompleteViewModelD
             
             guard let message = audioCompleteDataResponse?.message else { return }
             debugPrint(message)
-//            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: message)
-            openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle, message: "Your audio playback is completed", alertStyle: .alert, actionTitles: ["OK"], actionStyles: [.default], actions: [
+//            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: message)
+            openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle, message: "Your audio playback is completed", alertStyle: .alert, actionTitles: ["OK"], actionStyles: [.default], actions: [
                 { _ in
 //                    let audioListVC = ConstantStoryboard.meditationStoryboard.instantiateViewController(withIdentifier: "MeditationAudioListViewController") as! MeditationAudioListViewController
 //                    audioListVC.meditationAudioRequest = self.meditationAudioRequest
@@ -1013,13 +1013,13 @@ extension MeditationAudioPlayerViewController: MeditationAudioCompleteViewModelD
                 }
             ])
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveAudioCompleteDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
 

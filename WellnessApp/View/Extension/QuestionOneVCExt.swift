@@ -1,6 +1,6 @@
 //
 //  QuestionOneVCExt.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 22/09/21.
 //
@@ -36,7 +36,7 @@ extension QuestionOneViewController: ChakraQuestionViewModelDelegate {
             if status == false
             {
             
-            self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+            self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                          message: chakraAnswerResponse?.message ?? ConstantStatusAPI.success,
                                          alertStyle: .alert,
                                          actionTitles: [ConstantAlertTitle.OkAlertTitle],
@@ -52,7 +52,7 @@ extension QuestionOneViewController: ChakraQuestionViewModelDelegate {
               
                 let str = chakraAnswerResponse?.chakra ?? ConstantStatusAPI.success
                
-                self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                              message: "Your " + str + " is blocked. Meditating regularly on the " + str + " audios will enable you to open this chakra.",
                                              alertStyle: .alert,
                                              actionTitles: [ConstantAlertTitle.OkAlertTitle],
@@ -65,13 +65,13 @@ extension QuestionOneViewController: ChakraQuestionViewModelDelegate {
             }
                         
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveChakraAnswerError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     func didReceiveChakraQuestionResponse(chakraResponse: ChakraQuestionResponse?) {
@@ -89,13 +89,13 @@ extension QuestionOneViewController: ChakraQuestionViewModelDelegate {
             counter = 1
                         
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveChakraQuestionError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     //MARK: - Setup Dataholder
@@ -123,7 +123,7 @@ extension QuestionOneViewController: ChakraQuestionViewModelDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
             }
         } else {
             guard let token = UserDefaults.standard.value(forKey: ConstantUserDefaultTag.udToken) as? String else {
@@ -267,7 +267,7 @@ extension QuestionOneViewController: ChakraQuestionViewModelDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {

@@ -1,6 +1,6 @@
 //
 //  OtpValidateResponseModel.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 16/09/21.
 //

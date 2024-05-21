@@ -1,6 +1,6 @@
 //
 //  LiveSessionListViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASiMAC on 06/12/22.
 //
@@ -405,7 +405,7 @@ class LiveSessionListViewController: UIViewController,UITableViewDelegate, UITab
         }else
         {
             
-            let refreshAlert = UIAlertController(title: "Luvo", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
+            let refreshAlert = UIAlertController(title: "app_name", message: "Your Session is not started yet", preferredStyle: UIAlertController.Style.alert)
 
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                   print("Handle Ok logic here")
@@ -454,7 +454,7 @@ extension LiveSessionListViewController: LiveListViewModelDelegate
             tblVwList.reloadData()
            
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
     }
     
@@ -463,7 +463,7 @@ extension LiveSessionListViewController: LiveListViewModelDelegate
     func didReceiveLiveListError(statusCode: String?) {
         
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     
@@ -492,7 +492,7 @@ extension LiveSessionListViewController: LiveJoinViewModelDelegate
             navigationController?.pushViewController(LiveVC, animated: true)
            
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantStatusAPI.failed)
         }
         
     }
@@ -501,6 +501,6 @@ extension LiveSessionListViewController: LiveJoinViewModelDelegate
         
         
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }

@@ -1,6 +1,6 @@
 //
 //  WaterIntakeViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 22/11/21.
 //
@@ -113,7 +113,7 @@ class WaterIntakeViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -137,7 +137,7 @@ class WaterIntakeViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -201,7 +201,7 @@ extension WaterIntakeViewController: GetWaterGoalDelegate {
                     self.sentToNextPage()
                 }
             } else {
-                openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+                openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                         message: waterGoalDataResponse?.message ?? "Success",
                                         alertStyle: .alert,
                                         actionTitles: ["OK"],
@@ -214,13 +214,13 @@ extension WaterIntakeViewController: GetWaterGoalDelegate {
                                         ])
             }
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: waterGoalDataResponse?.message ?? ConstantStatusAPI.failed)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: waterGoalDataResponse?.message ?? ConstantStatusAPI.failed)
         }
     }
     
     func didReceiveWaterGoalDataError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     
     

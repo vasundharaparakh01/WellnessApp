@@ -1,6 +1,6 @@
 //
 //  LoginViewController.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 08/09/21.
 //
@@ -67,7 +67,7 @@ class LoginViewController: UIViewController {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {
@@ -157,7 +157,7 @@ extension LoginViewController: WebviewDelegate, LoginViewModelDelegate {
 //                let homeVC = ConstantStoryboard.mainStoryboard.instantiateViewController(identifier: "BaseTabBarViewController") as! BaseTabBarViewController
 //                self.navigationController?.pushViewController(homeVC, animated: true)
                 
-                let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to measure your regular activities through", preferredStyle: UIAlertController.Style.alert)
+                let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to measure your regular activities through", preferredStyle: UIAlertController.Style.alert)
 
                 refreshAlert.addAction(UIAlertAction(title: "iPhone", style: .default, handler: { (action: UIAlertAction!) in
                       print("Handle Ok logic here")
@@ -195,13 +195,13 @@ extension LoginViewController: WebviewDelegate, LoginViewModelDelegate {
             (UIApplication.shared.delegate as? AppDelegate)?.startTracking()
             
         } else {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: loginResponse?.message ?? ConstantAlertMessage.TryAgainLater)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: loginResponse?.message ?? ConstantAlertMessage.TryAgainLater)
         }
     }
     
     func didReceiveSocialLoginError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
     func autorizeHealthKit()
     {
@@ -257,7 +257,7 @@ extension LoginViewController: WebviewDelegate, LoginViewModelDelegate {
             if loginResponse?.userDetail?.deleted == true
             {
 
-                let refreshAlert = UIAlertController(title: "Luvo", message: "Your acount is permanently deleted", preferredStyle: UIAlertController.Style.alert)
+                let refreshAlert = UIAlertController(title: "app_name", message: "Your acount is permanently deleted", preferredStyle: UIAlertController.Style.alert)
 
                 refreshAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
                       print("Handle Ok logic here")
@@ -300,7 +300,7 @@ extension LoginViewController: WebviewDelegate, LoginViewModelDelegate {
                     }
                     else
                     {
-                    let refreshAlert = UIAlertController(title: "Luvo", message: "Do you want to measure your regular activities through", preferredStyle: UIAlertController.Style.alert)
+                    let refreshAlert = UIAlertController(title: "app_name", message: "Do you want to measure your regular activities through", preferredStyle: UIAlertController.Style.alert)
 
                     refreshAlert.addAction(UIAlertAction(title: "iPhone", style: .default, handler: { (action: UIAlertAction!) in
                           print("Handle Ok logic here")
@@ -341,14 +341,14 @@ extension LoginViewController: WebviewDelegate, LoginViewModelDelegate {
             (UIApplication.shared.delegate as? AppDelegate)?.startTracking()
             }
         } else if (loginResponse?.status == nil) {
-            showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: loginResponse?.message ?? ConstantAlertMessage.TryAgainLater)
+            showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: loginResponse?.message ?? ConstantAlertMessage.TryAgainLater)
         }
     }
 
     
     func didReceiveLoginError(statusCode: String?) {
         self.view.stopActivityIndicator()
-        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
+        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: statusCode ?? ConstantAlertTitle.ErrorAlertTitle)
     }
 }
                                                          
@@ -449,7 +449,7 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
                 
             } else {
                 print("Error: Trying to get user's info")
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Failed to get user infos. Try again")
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Failed to get user infos. Try again")
             }
         }
     }
@@ -482,7 +482,7 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
                 }
             } else {
                 DispatchQueue.main.async {
-                    self?.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: error ?? ConstantAlertTitle.ErrorAlertTitle)
+                    self?.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: error ?? ConstantAlertTitle.ErrorAlertTitle)
                 }
             }
             
@@ -490,7 +490,7 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
     }
     
     private func presentAlert() {
-        self.openAlertWithButtonFunc(title: ConstantAlertTitle.LuvoAlertTitle,
+        self.openAlertWithButtonFunc(title: ConstantAlertTitle.app_nameAlertTitle,
                                      message: "Signed with account: @\(self.instagramUser?.username ?? "")",
                                      alertStyle: .alert, actionTitles: [ConstantAlertTitle.OkAlertTitle],
                                      actionStyles: [.default],
@@ -635,7 +635,7 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
                         switch credentialState {
                         case .authorized:
                             // The Apple ID credential is valid.
-                          //  self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Apple Sign In successful")
+                          //  self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Apple Sign In successful")
                             
                             //------------------------------------------
                             guard let FCMToken = UserDefaults.standard.value(forKey: ConstantUserDefaultTag.udFCMToken) as? String else {
@@ -670,11 +670,11 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
                             break
                         case .revoked:
                             // The Apple ID credential is revoked.
-                            self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Apple ID revoked. Please try again later")
+                            self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Apple ID revoked. Please try again later")
                             break
                         case .notFound:
                             // No credential was found, so show the sign-in UI.
-                            self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Apple ID not found. Please try again later")
+                            self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Apple ID not found. Please try again later")
                         default:
                             break
                         }
@@ -689,7 +689,7 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
     func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
         // Handle error.
         self.view.stopActivityIndicator()
-        showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: "Apple Sign In failed. Please try again later")
+        showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: "Apple Sign In failed. Please try again later")
     }
     
     //MARK: - Sync Apple Data
@@ -723,7 +723,7 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
         let connectionStatus = ConnectionManager.shared.hasConnectivity()
         if (connectionStatus == false) {
             DispatchQueue.main.async {
-                self.showAlert(title: ConstantAlertTitle.LuvoAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
+                self.showAlert(title: ConstantAlertTitle.app_nameAlertTitle, message: ConstantInternetConnectionStatus.InternetOffline)
                 return
             }
         } else {

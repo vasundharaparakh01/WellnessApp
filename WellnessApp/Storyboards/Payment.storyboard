@@ -23,7 +23,7 @@
         <!--StripeVC-->
         <scene sceneID="SU2-Nl-Nur">
             <objects>
-                <viewController storyboardIdentifier="StripeVC" id="wIZ-d0-yaZ" customClass="StripeVC" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StripeVC" id="wIZ-d0-yaZ" customClass="StripeVC" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vOE-1c-NsG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
         <!--PaymentVC-->
         <scene sceneID="xux-np-WLa">
             <objects>
-                <viewController storyboardIdentifier="PaymentVC" hidesBottomBarWhenPushed="YES" id="Qy4-hu-Qhc" customClass="PaymentVC" customModule="Luvo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PaymentVC" hidesBottomBarWhenPushed="YES" id="Qy4-hu-Qhc" customClass="PaymentVC" customModule="app_name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hkP-2U-ECg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -418,7 +418,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ImgLuvo" destination="B9r-3C-BGb" id="kRn-8g-wIO"/>
+                        <outlet property="Imgapp_name" destination="B9r-3C-BGb" id="kRn-8g-wIO"/>
                         <outlet property="ViewPayment" destination="HW9-ih-4qz" id="VnU-eU-Q8q"/>
                     </connections>
                 </viewController>

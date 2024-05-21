@@ -1,6 +1,6 @@
 //
 //  SocialLoginRequest.swift
-//  Luvo
+ 
 //
 //  Created by BEASMACUSR02 on 17/09/21.
 //
